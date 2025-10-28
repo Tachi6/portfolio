@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+  --dark-background-color: #080808;
+  --dark-secondary-background-color: #1b1b1b;
+  --dark-primary-text-color: #f7f7f7;
+
+  --light-background-color: #f7f7f7;
+  --light-secondary-background-color: #e4e4e4;
+  --light-primary-text-color: #080808;
+
+  --secondary-text-color: #9c9c9c;
+
+  --header-height: 70px;
+  --footer-height: 70px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Zalando Sans', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--dark-background-color);
+    color: var(--dark-primary-text-color);
+  }
+
+  header,
+  footer {
+    background-color: var(--dark-secondary-background-color);
+  }
+
+  .technology-box,
+  button {
+    border: 1px solid var(--dark-secondary-background-color);
+  }
+
+  button:hover {
+    border-color: var(--secondary-text-color);
+    color: var(--dark-primary-text-color);
+  }
+
+  button:hover svg {
+    fill: var(--dark-primary-text-color);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--light-background-color);
+    color: var(--light-primary-text-color);
+  }
+
+  header,
+  footer {
+    background-color: var(--light-secondary-background-color);
+  }
+
+  .technology-box,
+  button {
+    border: 1px solid var(--light-secondary-background-color);
+  }
+
+  button:hover {
+    border-color: var(--secondary-text-color);
+    color: var(--light-primary-text-color);
+  }
+
+  button:hover svg {
+    fill: var(--light-primary-text-color);
+  }
+}
