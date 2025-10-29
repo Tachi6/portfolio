@@ -42,9 +42,12 @@ h1 {
   /* max-width: 400px; */
 }
 
-.description-text {
+p {
   font-weight: 200;
   color: var(--secondary-text-color);
+}
+
+.description-text {
   padding: 8px 0;
 }
 
@@ -95,11 +98,55 @@ h2 {
   font-weight: 500;
 }
 
+/* PROJECT */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .project {
-  width: 260px;
-  height: 260px;
-  border: 1px solid var(--secondary-text-color);
+  max-width: 360px;
+  min-width: 260px;
+  /* aspect-ratio: 1; */
+  /* outline: 1px solid var(--secondary-text-color); */
+  border: 10px solid transparent;
   border-radius: 10%;
+  overflow: hidden;
+  position: relative;
+  /* padding: 10px; */
+}
+
+.project:hover {
+  outline-color: var(--secondary-text-color);
+}
+
+.project-image {
+  width: 100%;
+  object-fit: contain;
+  /* border-top-right-radius: 10%;
+  border-top-left-radius: 24px; */
+}
+
+.project-image-hover {
+  filter: brightness(50%) blur(4px);
+}
+
+.project-text {
+  margin: 5px 0;
+  color: var(--secondary-text-color);
+  text-align: center;
+}
+
+.image-container {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  position: absolute;
 }
 
 /* BUTTON */
@@ -134,6 +181,10 @@ button {
 .mail {
   padding: 0 5px;
   user-select: text;
+}
+
+.link {
+  padding: 0;
 }
 
 /* button span svg {

@@ -49,7 +49,10 @@ export const HomeView = () => {
       </div>
       <div className="bottom-content">
         <h2>Proyectos</h2>
-        <Project />
+        <div className="projects">
+          <Project />
+          <Project />
+        </div>
       </div>
     </section>
   );

@@ -33,6 +33,10 @@
     background-color: var(--dark-secondary-background-color);
   }
 
+  .project {
+    outline: 1px solid var(--dark-secondary-background-color);
+  }
+
   .technology-box,
   button {
     border: 1px solid var(--dark-secondary-background-color);
@@ -40,11 +44,11 @@
 
   button:hover {
     border-color: var(--secondary-text-color);
-    color: var(--dark-primary-text-color);
+    /* color: var(--dark-primary-text-color); */
   }
 
   button:hover svg {
-    fill: var(--dark-primary-text-color);
+    /* fill: var(--dark-primary-text-color); */
   }
 }
 
@@ -64,12 +68,16 @@
     border: 1px solid var(--light-secondary-background-color);
   }
 
+  .project {
+    outline: 1px solid var(--light-secondary-background-color);
+  }
+
   button:hover {
     border-color: var(--secondary-text-color);
-    color: var(--light-primary-text-color);
+    /* color: var(--light-primary-text-color); */
   }
 
   button:hover svg {
-    fill: var(--light-primary-text-color);
+    /* fill: var(--light-primary-text-color); */
   }
 }

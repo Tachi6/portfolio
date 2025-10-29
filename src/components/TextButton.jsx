@@ -7,7 +7,7 @@ export const TextButton = ({ text, icon, customClass }) => {
       }}
     >
       {text}
-      <span>{icon}</span>
+      {icon}
     </button>
   );
 };
