@@ -7,6 +7,7 @@ import { JavaScriptLogo } from '../icons/JavaScriptLogo';
 import { LinkIcon } from '../icons/LinkIcon';
 import { TechnologyBox } from './TechnologyBox';
 import { TextButton } from './TextButton';
+import { BigButton } from './BigButton';
 
 export const Project = () => {
   const [hover, setHover] = useState(false);
@@ -16,8 +17,8 @@ export const Project = () => {
       <div className="image-container">
         <img src={cocktailsImage} className={`project-image ${hover && 'project-image-hover'}`} />
         <div className="hide">
-          <TextButton icon={<GitHubIcon />} />
-          <TextButton icon={<LinkIcon />} customClass="link" />
+          <BigButton icon={<GitHubIcon />} text="Code" />
+          <BigButton icon={<LinkIcon />} text="Open" customClass="link" />
         </div>
       </div>
       <p className="project-text">Busca inspiración y recetas de cocktails. Prueba y valora las creaciones.</p>
