@@ -5,7 +5,7 @@ export const ReactLogo = ({ height }) => {
       xmlnsXlink="http://www.w3.org/1999/xlink"
       height={height}
       preserveAspectRatio="xMidYMid meet"
-      viewBox="0 0 256 228"
+      viewBox="0 -14 256 256"
     >
       <path
         fill="#00D8FF"

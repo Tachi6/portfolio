@@ -44,11 +44,14 @@
 
   button:hover {
     border-color: var(--secondary-text-color);
-    /* color: var(--dark-primary-text-color); */
   }
 
-  button:hover svg {
-    /* fill: var(--dark-primary-text-color); */
+  nav a:hover {
+    filter: brightness(150%);
+  }
+
+  nav a.active {
+    color: var(--dark-primary-text-color);
   }
 }
 
@@ -74,10 +77,14 @@
 
   button:hover {
     border-color: var(--secondary-text-color);
-    /* color: var(--light-primary-text-color); */
   }
 
-  button:hover svg {
-    /* fill: var(--light-primary-text-color); */
+  nav a:hover {
+    /* TODO: test light mode */
+    filter: brightness(50%);
+  }
+
+  nav a:active {
+    color: var(--light-primary-text-color);
   }
 }

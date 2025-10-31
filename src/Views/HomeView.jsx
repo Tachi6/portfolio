@@ -11,6 +11,7 @@ import { JavaScriptLogo } from '../icons/JavaScriptLogo';
 import { LinkedinIcon } from '../icons/LinkedinIcon';
 import { ReactLogo } from '../icons/ReactLogo';
 import { TypeScriptLogo } from '../icons/TypeScriptLogo';
+import cocktailsImage from '../assets/cocktails.png';
 
 export const HomeView = () => {
   return (
@@ -23,11 +24,11 @@ export const HomeView = () => {
           <div className="abilities">
             <p className="ability-text">FRONT-END WEB DEVELOPER</p>
             <div className="abilities-logos">
-              <TechnologyBox logo={<HtmlLogo height={24} />} />
-              <TechnologyBox logo={<CssLogo height={24} />} />
-              <TechnologyBox logo={<JavaScriptLogo height={24} />} />
-              <TechnologyBox logo={<TypeScriptLogo height={24} />} />
-              <TechnologyBox logo={<ReactLogo height={24} />} />
+              <TechnologyBox logo={<HtmlLogo height={20} />} />
+              <TechnologyBox logo={<CssLogo height={20} />} />
+              <TechnologyBox logo={<JavaScriptLogo height={20} />} />
+              <TechnologyBox logo={<TypeScriptLogo height={20} />} />
+              <TechnologyBox logo={<ReactLogo height={22} />} />
             </div>
           </div>
           <p className="description-text">
@@ -48,10 +49,34 @@ export const HomeView = () => {
         <img src={mainPhoto} alt="main-photo" className="main-photo" />
       </div>
       <div className="bottom-content">
-        <h2>Proyectos</h2>
+        <h2>Proyectos destacados</h2>
         <div className="projects">
-          <Project />
-          <Project />
+          <Project
+            image={cocktailsImage}
+            codeUrl="https://www.google.com"
+            viewUrl="https://www.marca.com"
+            infoText="Busca inspiración y recetas de cocktails. Prueba y valora las creaciones."
+            technologies={
+              <>
+                <TechnologyBox logo={<HtmlLogo height={20} />} />
+                <TechnologyBox logo={<CssLogo height={20} />} />
+                <TechnologyBox logo={<JavaScriptLogo height={20} />} />
+              </>
+            }
+          />
+          <Project
+            image={cocktailsImage}
+            codeUrl="https://www.google.com"
+            viewUrl="https://www.marca.com"
+            infoText="Busca inspiración y recetas de cocktails. Prueba y valora las creaciones."
+            technologies={
+              <>
+                <TechnologyBox logo={<HtmlLogo height={20} />} />
+                <TechnologyBox logo={<CssLogo height={20} />} />
+                <TechnologyBox logo={<JavaScriptLogo height={20} />} />
+              </>
+            }
+          />
         </div>
       </div>
     </section>
