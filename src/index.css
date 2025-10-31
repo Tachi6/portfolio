@@ -46,7 +46,8 @@
     border-color: var(--secondary-text-color);
   }
 
-  nav a:hover {
+  nav a:hover,
+  footer a:hover {
     filter: brightness(150%);
   }
 
@@ -79,7 +80,8 @@
     border-color: var(--secondary-text-color);
   }
 
-  nav a:hover {
+  nav a:hover,
+  footer a:hover {
     /* TODO: test light mode */
     filter: brightness(50%);
   }
