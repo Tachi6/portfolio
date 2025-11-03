@@ -347,16 +347,13 @@ footer span {
     font-size: 14px;
   }
 
-  /* .project .big-button {
+  .project .big-button {
     pointer-events: none;
-  } */
-
-  .project.mobile-hover .big-button {
-    pointer-events: all;
   }
 
-  .project.mobile-hover {
-    outline-color: var(--secondary-text-color);
+  .project-buttons.show .big-button {
+    opacity: 1;
+    pointer-events: all;
   }
 
   footer {
