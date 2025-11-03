@@ -1,4 +1,4 @@
-export const VueIcon = ({ height }) => {
+export const VueLogo = ({ height = 20 }) => {
   return (
     <svg
       height={height}

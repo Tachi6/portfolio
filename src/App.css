@@ -32,7 +32,7 @@ footer {
 
 .top-content {
   display: flex;
-  gap: 36px;
+  gap: 35px;
 }
 
 h1 {
@@ -162,8 +162,8 @@ h2 {
 
 .technologies {
   display: flex;
-  gap: 10px;
   justify-content: center;
+  gap: 15px;
 }
 
 /* BUTTON */
@@ -179,7 +179,8 @@ h2 {
   height: 20px;
 }
 
-button {
+button,
+.small-button {
   height: 28px;
   min-width: 28px;
   padding: 0px 3px;

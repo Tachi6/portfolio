@@ -1,4 +1,4 @@
-export const CssLogo = ({ height }) => {
+export const CssLogo = ({ height = 20 }) => {
   return (
     <svg height={height} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
       <path fill="#264de4" d="M72 460L30 0h451l-41 460-184 52" />

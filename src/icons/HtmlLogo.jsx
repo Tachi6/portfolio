@@ -1,4 +1,4 @@
-export const HtmlLogo = ({ height }) => {
+export const HtmlLogo = ({ height = 20 }) => {
   return (
     <svg height={height} xmlns="http://www.w3.org/2000/svg" aria-label="HTML5" role="img" viewBox="0 0 512 512">
       <path fill="#e34f26" d="M71 460L30 0h451l-41 460-185 52" />

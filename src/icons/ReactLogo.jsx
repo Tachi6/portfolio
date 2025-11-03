@@ -1,4 +1,4 @@
-export const ReactLogo = ({ height }) => {
+export const ReactLogo = ({ height = 22 }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

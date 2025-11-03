@@ -38,10 +38,12 @@
   }
 
   .technology-box,
+  .small-button,
   button {
     border: 1px solid var(--dark-secondary-background-color);
   }
 
+  .small-button:hover,
   button:hover {
     border-color: var(--secondary-text-color);
   }
@@ -68,6 +70,7 @@
   }
 
   .technology-box,
+  .small-button,
   button {
     border: 1px solid var(--light-secondary-background-color);
   }
@@ -76,6 +79,7 @@
     outline: 1px solid var(--light-secondary-background-color);
   }
 
+  .small-button:hover,
   button:hover {
     border-color: var(--secondary-text-color);
   }

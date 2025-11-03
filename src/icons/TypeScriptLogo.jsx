@@ -1,4 +1,4 @@
-export const TypeScriptLogo = ({ height }) => {
+export const TypeScriptLogo = ({ height = 20 }) => {
   return (
     <svg
       height={height}
