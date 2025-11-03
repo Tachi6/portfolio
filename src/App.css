@@ -106,7 +106,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  row-gap: 20px;
+  gap: 20px;
 }
 
 .project {
@@ -179,10 +179,6 @@ h2 {
   height: 20px;
 }
 
-.contact-buttons svg {
-  margin-top: 3px;
-}
-
 button {
   height: 28px;
   min-width: 28px;
@@ -191,11 +187,13 @@ button {
   cursor: pointer;
   background-color: transparent;
   color: var(--secondary-text-color);
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cv {
-  padding-right: 4px;
+  padding-right: 3px;
 }
 
 .mail {
@@ -247,13 +245,9 @@ button {
   height: 28px;
   border-radius: 3%;
   padding: 3px;
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center; */
-}
-
-.technology-box:last-child {
-  padding: 2px;
+  align-items: center;
 }
 
 /* NAVBAR */
@@ -353,6 +347,18 @@ footer span {
     font-size: 14px;
   }
 
+  /* .project .big-button {
+    pointer-events: none;
+  } */
+
+  .project.mobile-hover .big-button {
+    pointer-events: all;
+  }
+
+  .project.mobile-hover {
+    outline-color: var(--secondary-text-color);
+  }
+
   footer {
     flex-direction: column;
     justify-content: space-evenly;
@@ -360,5 +366,9 @@ footer span {
 
   footer p:last-child span {
     display: none;
+  }
+
+  footer span {
+    padding: 0 8px;
   }
 }

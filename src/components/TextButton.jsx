@@ -1,4 +1,4 @@
-export const TextButton = ({ text, icon, customClass }) => {
+export const TextButton = ({ text, icon, customClass = '' }) => {
   return (
     <button
       className={customClass}

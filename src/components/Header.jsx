@@ -9,13 +9,13 @@ export const Header = () => {
             <NavLink to={'/'}>Portada</NavLink>
           </li>
           <li>
-            <NavLink to={'/settings'}>Proyectos</NavLink>
+            <NavLink to={'/projects'}>Proyectos</NavLink>
           </li>
           <li>
-            <NavLink to={'/rules'}>Tecnologias</NavLink>
+            <NavLink to={'/techs'}>Tecnologias</NavLink>
           </li>
           <li>
-            <NavLink to={'/records'}>Sobre mi</NavLink>
+            <NavLink to={'/about'}>Sobre mi</NavLink>
           </li>
         </ul>
       </nav>

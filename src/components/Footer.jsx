@@ -19,7 +19,7 @@ export const Footer = () => {
           <span>|</span>
         </p>
       </div>
-      <p class="copyright">&copy; 2025 David Gonzalez de la Rosa</p>
+      <p className="copyright">&copy; 2025 David Gonzalez de la Rosa</p>
     </footer>
   );
 };

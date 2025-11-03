@@ -2,16 +2,16 @@ import mainPhoto from '../assets/main-photo.jpg';
 import { Project } from '../components/Project';
 import { TechnologyBox } from '../components/TechnologyBox';
 import { TextButton } from '../components/TextButton';
-import { CopyIcon } from '../icons/CopyIcon';
 import { CssLogo } from '../icons/CssLogo';
-import { DownloadIcon } from '../icons/DownloadIcon';
 import { GitHubIcon } from '../icons/GitHubIcon';
 import { HtmlLogo } from '../icons/HtmlLogo';
 import { JavaScriptLogo } from '../icons/JavaScriptLogo';
 import { LinkedinIcon } from '../icons/LinkedinIcon';
 import { ReactLogo } from '../icons/ReactLogo';
 import { TypeScriptLogo } from '../icons/TypeScriptLogo';
-import cocktailsImage from '../assets/cocktails.png';
+import cocktails from '../assets/cocktails.png';
+import dragonBall from '../assets/dragon-ball.png';
+import { VueIcon } from '../icons/VueIcon';
 
 export const HomeView = () => {
   return (
@@ -52,9 +52,9 @@ export const HomeView = () => {
         <h2>Proyectos destacados</h2>
         <div className="projects">
           <Project
-            image={cocktailsImage}
-            codeUrl="https://www.google.com"
-            viewUrl="https://www.marca.com"
+            image={cocktails}
+            codeUrl="https://github.com/Tachi6/cocktails"
+            viewUrl="https://cocktails-tachi6.netlify.app/"
             infoText="Busca inspiración y recetas de cocktails. Prueba y valora las creaciones."
             technologies={
               <>
@@ -65,15 +65,14 @@ export const HomeView = () => {
             }
           />
           <Project
-            image={cocktailsImage}
-            codeUrl="https://www.google.com"
-            viewUrl="https://www.marca.com"
-            infoText="Busca inspiración y recetas de cocktails. Prueba y valora las creaciones."
+            image={dragonBall}
+            codeUrl="https://github.com/Tachi6/dragon-ball"
+            viewUrl="https://dragon-ball-z-vue.netlify.app/"
+            infoText="Descubre los personajes de Dragon Ball Z y lucha con ellos en un juego de cartas."
             technologies={
               <>
-                <TechnologyBox logo={<HtmlLogo height={20} />} />
-                <TechnologyBox logo={<CssLogo height={20} />} />
                 <TechnologyBox logo={<JavaScriptLogo height={20} />} />
+                <TechnologyBox logo={<VueIcon height={20} />} />
               </>
             }
           />

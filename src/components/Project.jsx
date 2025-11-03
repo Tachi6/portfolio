@@ -7,13 +7,15 @@ import { BigButton } from './BigButton';
 export const Project = ({ image, codeUrl, viewUrl, infoText, technologies }) => {
   const [hover, setHover] = useState(false);
 
+  const clearHover = () => setHover(false);
+
   return (
-    <div className="project" onMouseOver={() => setHover(true)} onMouseLeave={() => setHover(false)}>
+    <div className={`project`} onMouseOver={() => setHover(true)} onMouseLeave={() => setHover(false)}>
       <div className="image-container">
         <img src={image} className={`project-image ${hover && 'project-image-hover'}`} />
         <div className={`project-buttons ${hover && 'show'}`}>
-          <BigButton icon={<GitHubIcon />} text="Code" url={codeUrl} />
-          <BigButton icon={<LinkIcon />} text="View" url={viewUrl} customClass="link" />
+          <BigButton icon={<GitHubIcon />} text="Code" url={codeUrl} clickAction={clearHover} />
+          <BigButton icon={<LinkIcon />} text="View" url={viewUrl} customClass="link" clickAction={clearHover} />
         </div>
       </div>
       <p className="project-text">{infoText}</p>
