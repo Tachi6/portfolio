@@ -15,6 +15,6 @@ export const Data = {
     codeUrl: 'https://github.com/Tachi6/dragon-ball',
     viewUrl: 'https://dragon-ball-z-vue.netlify.app/',
     infoText: 'Descubre los personajes de Dragon Ball Z y lucha con ellos en un juego de cartas.',
-    technologies: [technologies.js, technologies.vue],
+    technologies: [technologies.vue, technologies.js],
   },
 };

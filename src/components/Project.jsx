@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { GitHubIcon } from '../icons/GitHubIcon';
 import { LinkIcon } from '../icons/LinkIcon';
-import { BigButton } from './BigButton';
+import { BigLinkButton } from './BigLinkButton';
 
 export const Project = ({ image, codeUrl, viewUrl, infoText, technologies }) => {
   const [hover, setHover] = useState(false);
@@ -14,8 +14,8 @@ export const Project = ({ image, codeUrl, viewUrl, infoText, technologies }) => 
       <div className="image-container">
         <img src={image} className={`project-image ${hover && 'project-image-hover'}`} />
         <div className={`project-buttons ${hover && 'show'}`}>
-          <BigButton icon={<GitHubIcon />} text="Code" url={codeUrl} clickAction={clearHover} />
-          <BigButton icon={<LinkIcon />} text="View" url={viewUrl} customClass="link" clickAction={clearHover} />
+          <BigLinkButton icon={<GitHubIcon />} text="Code" url={codeUrl} clickAction={clearHover} />
+          <BigLinkButton icon={<LinkIcon />} text="View" url={viewUrl} customClass="link" clickAction={clearHover} />
         </div>
       </div>
       <p className="project-text">{infoText}</p>
