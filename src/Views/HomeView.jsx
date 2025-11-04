@@ -11,7 +11,7 @@ import { pageTransitions } from '../animations/pageTransition';
 export const HomeView = () => {
   return (
     <motion.section
-      className="page-container home"
+      className="page-container"
       initial={pageTransitions.initial}
       animate={pageTransitions.animate}
       exit={pageTransitions.exit}
