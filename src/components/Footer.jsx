@@ -1,8 +1,11 @@
 import { Link } from 'react-router';
+// eslint-disable-next-line no-unused-vars
+import { motion } from 'motion/react';
+import { pageTransitions } from '../animations/pageTransition';
 
 export const Footer = () => {
   return (
-    <footer>
+    <motion.footer initial={pageTransitions.initial} animate={pageTransitions.animate} exit={pageTransitions.exit}>
       <div>
         <p>
           Design inspired in{' '}
@@ -20,6 +23,6 @@ export const Footer = () => {
         </p>
       </div>
       <p className="copyright">&copy; 2025 David Gonzalez de la Rosa</p>
-    </footer>
+    </motion.footer>
   );
 };

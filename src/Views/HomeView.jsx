@@ -4,10 +4,18 @@ import { Projects } from '../components/Projects';
 import { Data } from '../data/data';
 import { technologies } from '../data/technologies';
 import mainPhoto from '../assets/main-photo.jpg';
+// eslint-disable-next-line no-unused-vars
+import { motion } from 'motion/react';
+import { pageTransitions } from '../animations/pageTransition';
 
 export const HomeView = () => {
   return (
-    <section className="page-container home">
+    <motion.section
+      className="page-container home"
+      initial={pageTransitions.initial}
+      animate={pageTransitions.animate}
+      exit={pageTransitions.exit}
+    >
       <div className="top-content">
         <div className="main-info">
           <h1>
@@ -26,6 +34,6 @@ export const HomeView = () => {
         <img src={mainPhoto} alt="main-photo" className="main-photo" />
       </div>
       <Projects label="Proyectos destacados" projects={[Data.cocktails, Data.dragonBall]} />
-    </section>
+    </motion.section>
   );
 };

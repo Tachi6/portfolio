@@ -5,10 +5,10 @@
 }
 
 .page-container {
-  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  min-height: calc(100vh - var(--footer-height));
   max-width: 80%;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: calc(var(--header-height) + 40px) 0 40px 0;
   gap: 20px;
   display: flex;
   flex-direction: column;
@@ -17,11 +17,15 @@
 
 header {
   height: 70px;
+  width: calc(100vw - 16px);
+  max-width: 1280px;
   border-bottom-left-radius: 28px;
   border-bottom-right-radius: 28px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: fixed;
+  z-index: 1;
 }
 
 footer {
@@ -95,8 +99,10 @@ p {
 }
 
 h2 {
+  height: 42px;
   font-size: 34px;
   font-weight: 500;
+  line-height: 0.8;
   text-align: center;
 }
 
