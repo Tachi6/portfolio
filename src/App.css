@@ -197,9 +197,26 @@ button,
   padding-right: 3px;
 }
 
+.mail-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5px;
+}
+
 .mail {
   padding: 0 5px;
   user-select: text;
+}
+
+.clipboard {
+  font-size: 12px;
+  opacity: 0;
+  transition: 0.5s ease-out;
+}
+
+.clipboard.show {
+  opacity: 1;
 }
 
 .link {
