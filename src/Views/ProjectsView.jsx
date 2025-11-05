@@ -1,6 +1,6 @@
 import { pageTransitions } from '../animations/pageTransition';
 import { Projects } from '../components/Projects';
-import { Data } from '../data/data';
+import { projectsData } from '../data/projectsData.js';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'motion/react';
 import { ReactLogo } from '../icons/ReactLogo';
@@ -18,19 +18,19 @@ export const ProjectsView = () => {
       <Projects
         label="Proyectos React"
         icon={<ReactLogo height={28} />}
-        projects={[Data.portfolio, Data.quickTrivia]}
+        projects={[projectsData.portfolio, projectsData.quickTrivia]}
       />
       <Projects
         label="Proyectos Vue"
         icon={<VueLogo height={28.5} />}
         logoStyle="move-bottom"
-        projects={[Data.dragonBall]}
+        projects={[projectsData.dragonBall]}
       />
       <Projects
         label="Proyectos Vanilla JS"
         icon={<JavaScriptLogo height={24.5} />}
         logoStyle="move-bottom"
-        projects={[Data.cocktails]}
+        projects={[projectsData.cocktails]}
       />
     </motion.section>
   );

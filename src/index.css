@@ -27,7 +27,8 @@ html {
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
+  body,
+  .text-box-label {
     background-color: var(--dark-background-color);
     color: var(--dark-primary-text-color);
   }
@@ -43,6 +44,7 @@ html {
 
   .technology-box,
   .small-button,
+  .text-box,
   button {
     border: 1px solid var(--dark-secondary-background-color);
   }
@@ -57,13 +59,18 @@ html {
     filter: brightness(150%);
   }
 
+  .double-quote-color {
+    fill: var(--dark-primary-text-color);
+  }
+
   nav a.active {
     color: var(--dark-primary-text-color);
   }
 }
 
 @media (prefers-color-scheme: light) {
-  body {
+  body,
+  .text-box-label {
     background-color: var(--light-background-color);
     color: var(--light-primary-text-color);
   }
@@ -92,6 +99,10 @@ html {
   footer a:hover {
     /* TODO: test light mode */
     filter: brightness(50%);
+  }
+
+  .double-quote-color {
+    fill: var(--light-primary-text-color);
   }
 
   nav a:active {

@@ -1,12 +1,12 @@
 import { Abilities } from '../components/Abilities';
 import { Contact } from '../components/Contact';
 import { Projects } from '../components/Projects';
-import { Data } from '../data/data';
-import { technologies } from '../data/technologies';
+import { projectsData } from '../data/projectsData.js';
 import mainPhoto from '../assets/main-photo.jpg';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'motion/react';
 import { pageTransitions } from '../animations/pageTransition';
+import { technologiesData } from '../data/TechnologiesData.jsx';
 
 export const HomeView = () => {
   return (
@@ -22,18 +22,24 @@ export const HomeView = () => {
             David Gonzalez <span className="break-line">de la Rosa</span>
           </h1>
           <Abilities
-            abilities={[technologies.html, technologies.css, technologies.js, technologies.ts, technologies.react]}
+            abilities={[
+              technologiesData.html,
+              technologiesData.css,
+              technologiesData.js,
+              technologiesData.ts,
+              technologiesData.react,
+            ]}
           />
           <p className="description-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ducimus voluptatum, voluptatem, eius,
-            possimus voluptates quae odio earum nostrum tempore delectus quia vitae libero at est perferendis quod ullam
-            temporibus?
+            Creador de diseños elegantes e intuitivos con código limpio y estructurado.
+            <br />
+            Transformo ideas eficientemente en soluciones digitales cuidando los detalles.
           </p>
           <Contact />
         </div>
         <img src={mainPhoto} alt="main-photo" className="main-photo" />
       </div>
-      <Projects label="Proyectos destacados" projects={[Data.cocktails, Data.dragonBall]} />
+      <Projects label="Proyectos destacados" projects={[projectsData.cocktails, projectsData.dragonBall]} />
     </motion.section>
   );
 };

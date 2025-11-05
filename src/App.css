@@ -6,11 +6,11 @@
 
 .page-container {
   min-height: calc(100vh - var(--footer-height));
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
   padding: calc(var(--header-height) + 40px) 0 40px 0;
-  gap: 20px;
   display: flex;
+  gap: 20px;
   flex-direction: column;
   justify-content: space-evenly;
 }
@@ -35,16 +35,16 @@ footer {
 }
 
 .top-content {
+  max-width: 90%;
+  align-self: center;
   display: flex;
-  gap: 35px;
+  gap: 40px;
 }
 
 h1 {
   font-size: 44px;
   font-weight: 600;
   display: inline-block;
-  /* font-size: 3em; */
-  /* max-width: 400px; */
 }
 
 p {
@@ -69,13 +69,8 @@ p {
 .ability-text {
   font-size: 18px;
   font-weight: 400;
-  /* display: inline-block; */
   max-width: 580px;
   color: var(--secondary-text-color);
-  /* padding: 4px 8px; */
-  /* border: 1px solid var(--secondary-text-color); */
-  /* border-radius: 8px;
-  background-color: #3f8e00; */
 }
 
 .abilities-logos {
@@ -126,20 +121,17 @@ h2 {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 20px;
+  justify-content: center;
+  row-gap: 40px;
+  column-gap: 40px;
 }
 
 .project {
-  max-width: 360px;
-  min-width: 260px;
-  /* aspect-ratio: 1; */
-  /* outline: 1px solid var(--secondary-text-color); */
+  max-width: 350px;
   border: 10px solid transparent;
   border-radius: 10%;
   overflow: hidden;
   position: relative;
-  /* padding: 10px; */
 }
 
 .project:hover {
@@ -249,11 +241,6 @@ button,
   margin-top: 0;
 }
 
-/* button span svg {
-  width: 24px;
-  height: 24px;
-  margin-top: 3px;
-} */
 .big-button-container {
   display: flex;
   flex-direction: column;
@@ -314,6 +301,28 @@ nav a {
   color: var(--secondary-text-color);
 }
 
+/* TEXTBOX */
+.text-box {
+  margin-top: 40px;
+  min-width: 260px;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.text-box-label {
+  height: 44px;
+  font-size: 18px;
+  font-weight: 400;
+  position: absolute;
+  padding: 0 5px 0 10px;
+  top: -24px;
+  left: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
 /* FOOTER */
 
 footer {
@@ -328,7 +337,8 @@ footer p {
   display: inline-flex;
 }
 
-footer a {
+footer a,
+.text-box a {
   font-weight: 400;
   color: var(--secondary-text-color);
 }
@@ -392,6 +402,21 @@ footer span {
 
   nav a {
     font-size: 14px;
+  }
+
+  .projects-container {
+    padding-top: calc(var(--header-height) + 7.5px);
+    gap: 20px;
+  }
+
+  .about-me-container {
+    padding-top: calc(var(--header-height) + 7.5px);
+    gap: 0;
+  }
+
+  .projects {
+    margin-top: 10px;
+    row-gap: 20px;
   }
 
   .project .big-button {
