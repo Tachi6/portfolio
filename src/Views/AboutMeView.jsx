@@ -1,5 +1,5 @@
 import { TextBox } from '../components/TextBox';
-import { aboutMeData } from '../data/AboutMeData';
+import { aboutMeData } from '../data/AboutMeData.jsx';
 
 export const AboutMeView = () => {
   return (
