@@ -1,11 +1,11 @@
 import { TextBox } from '../components/TextBox';
-import { AboutMeData } from '../data/AboutMeData';
+import { aboutMeData } from '../data/AboutMeData';
 
 export const AboutMeView = () => {
   return (
     <section className="page-container about-me-container">
       <h2>Conóceme más</h2>
-      {AboutMeData.map((data) => (
+      {aboutMeData.map((data) => (
         <TextBox key={data.label} label={data.label} content={data.content} />
       ))}
     </section>
