@@ -2,7 +2,7 @@ import cocktails from '../assets/cocktails.png';
 import dragonBall from '../assets/dragon-ball.png';
 import quickTrivia from '../assets/quick-trivia.png';
 import portfolio from '../assets/portfolio.png';
-import { technologiesData } from './TechnologiesData.jsx';
+import { techsData } from './TechsData.jsx';
 
 export const projectsData = {
   cocktails: {
@@ -10,27 +10,27 @@ export const projectsData = {
     codeUrl: 'https://github.com/Tachi6/cocktails',
     viewUrl: 'https://cocktails-tachi6.netlify.app/',
     infoText: 'Busca inspiración y recetas de cocktails. Prueba y valora las creaciones.',
-    technologies: [technologiesData.html, technologiesData.css, technologiesData.js],
+    technologies: [techsData.html, techsData.css, techsData.js],
   },
   dragonBall: {
     image: dragonBall,
     codeUrl: 'https://github.com/Tachi6/dragon-ball',
     viewUrl: 'https://dragon-ball-z-vue.netlify.app/',
     infoText: 'Descubre los personajes de Dragon Ball Z y lucha con ellos en un juego de cartas.',
-    technologies: [technologiesData.vue, technologiesData.js],
+    technologies: [techsData.vue, techsData.js],
   },
   quickTrivia: {
     image: quickTrivia,
     codeUrl: 'https://github.com/Tachi6/quick-trivia',
     viewUrl: 'https://quick-trivia-react.netlify.app/',
     infoText: 'Responde el mayor numero de preguntas en 30 o 60 segundos y bate tus records.',
-    technologies: [technologiesData.react, technologiesData.js],
+    technologies: [techsData.react, techsData.js],
   },
   portfolio: {
     image: portfolio,
     codeUrl: 'https://github.com/Tachi6/portfolio',
     viewUrl: 'https://portfolio-david-gonzalez-de-la-rosa.netlify.app/',
     infoText: 'Mi portfolio con toda mi información realizado con React y Javascript.',
-    technologies: [technologiesData.react, technologiesData.js],
+    technologies: [techsData.react, techsData.js],
   },
 };

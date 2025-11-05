@@ -5,7 +5,8 @@ import { Header } from './components/Header';
 import { HomeView } from './Views/HomeView';
 import { ProjectsView } from './Views/ProjectsView';
 import { AnimatePresence } from 'motion/react';
-import { AboutMeView } from './Views/AboutMeView';
+import { AboutView } from './Views/AboutView';
+import { TechsView } from './Views/TechsView';
 
 function App() {
   const location = useLocation();
@@ -17,7 +18,8 @@ function App() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<HomeView />} />
           <Route path="/projects" element={<ProjectsView />} />
-          <Route path="/aboutme" element={<AboutMeView />} />
+          <Route path="/techs" element={<TechsView />} />
+          <Route path="/about" element={<AboutView />} />
         </Routes>
       </AnimatePresence>
       <Footer />

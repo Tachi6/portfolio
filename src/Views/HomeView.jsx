@@ -6,7 +6,7 @@ import mainPhoto from '../assets/main-photo.jpg';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'motion/react';
 import { pageTransitions } from '../animations/pageTransition';
-import { technologiesData } from '../data/TechnologiesData.jsx';
+import { techsData } from '../data/TechsData.jsx';
 
 export const HomeView = () => {
   return (
@@ -21,15 +21,7 @@ export const HomeView = () => {
           <h1>
             David Gonzalez <span className="break-line">de la Rosa</span>
           </h1>
-          <Abilities
-            abilities={[
-              technologiesData.html,
-              technologiesData.css,
-              technologiesData.js,
-              technologiesData.ts,
-              technologiesData.react,
-            ]}
-          />
+          <Abilities abilities={[techsData.html, techsData.css, techsData.js, techsData.ts, techsData.react]} />
           <p className="description-text">
             Creador de diseños elegantes e intuitivos con código limpio y estructurado.
             <br />
