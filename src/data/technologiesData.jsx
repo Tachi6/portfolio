@@ -5,7 +5,7 @@ import { TypeScriptLogo } from '../icons/TypeScriptLogo';
 import { VueLogo } from '../icons/VueLogo';
 import { ReactLogo } from '../icons/ReactLogo';
 
-export const technologiesData = {
+export const TechnologiesData = {
   html: <HtmlLogo />,
   css: <CssLogo />,
   js: <JavaScriptLogo />,

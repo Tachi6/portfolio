@@ -6,7 +6,7 @@ import mainPhoto from '../assets/main-photo.jpg';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'motion/react';
 import { pageTransitions } from '../animations/pageTransition';
-import { technologiesData } from '../data/TechnologiesData.jsx';
+import { TechnologiesData } from '../data/TechnologiesData.jsx';
 
 export const HomeView = () => {
   return (
@@ -23,11 +23,11 @@ export const HomeView = () => {
           </h1>
           <Abilities
             abilities={[
-              technologiesData.html,
-              technologiesData.css,
-              technologiesData.js,
-              technologiesData.ts,
-              technologiesData.react,
+              TechnologiesData.html,
+              TechnologiesData.css,
+              TechnologiesData.js,
+              TechnologiesData.ts,
+              TechnologiesData.react,
             ]}
           />
           <p className="description-text">

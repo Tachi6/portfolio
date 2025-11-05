@@ -1,6 +1,6 @@
 import { Link } from 'react-router';
 
-export const aboutMeData = [
+export const AboutMeData = [
   {
     label: 'Que estoy buscando',
     content:
