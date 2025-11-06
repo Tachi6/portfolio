@@ -11,7 +11,8 @@ export const Projects = ({ label, icon, projects, logoStyle = '' }) => {
       <div className="projects">
         {projects.map((project) => (
           <Project
-            key={project.codeUrl}
+            key={project.name + project.codeUrl}
+            name={project.name}
             image={project.image}
             codeUrl={project.codeUrl}
             viewUrl={project.viewUrl}

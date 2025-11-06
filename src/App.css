@@ -153,8 +153,13 @@ h2 {
   filter: brightness(33%) blur(4px);
 }
 
+h3 {
+  font-size: 26px;
+  font-weight: 400;
+}
+
 .project-text {
-  margin: 5px 0;
+  margin-top: 5px;
   color: var(--secondary-text-color);
   text-align: center;
 }
@@ -164,6 +169,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .project-buttons {
@@ -180,6 +186,7 @@ h2 {
 .technologies {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 15px;
 }
 
@@ -396,6 +403,10 @@ footer span {
     font-size: 25px;
   }
 
+  h3 {
+    font-size: 18px;
+  }
+
   .project {
     min-height: 270px;
   }
@@ -431,7 +442,7 @@ footer span {
   }
 
   .top-content {
-    min-height: 435px;
+    min-height: 430px;
     gap: 10px;
     flex-direction: column;
     align-items: center;
@@ -448,14 +459,23 @@ footer span {
   }
 
   .description-text {
+    padding: 4px 0;
     text-align: center;
     max-width: 280px;
   }
 
   .main-info {
-    min-height: 275px;
+    min-height: 270px;
     gap: 5px;
     align-items: center;
+  }
+
+  .contact-buttons {
+    height: 40px;
+  }
+
+  .mail-button {
+    gap: 0;
   }
 
   nav a {

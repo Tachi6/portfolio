@@ -4,7 +4,7 @@ import { GitHubLogo } from '../logos/GitHubLogo';
 import { LinkIcon } from '../icons/LinkIcon';
 import { BigLinkButton } from './BigLinkButton';
 
-export const Project = ({ image, codeUrl, viewUrl, infoText, technologies }) => {
+export const Project = ({ name, image, codeUrl, viewUrl, infoText, technologies }) => {
   const [hover, setHover] = useState(false);
 
   const clearHover = () => window.innerWidth <= 960 && setHover(false);
@@ -22,8 +22,12 @@ export const Project = ({ image, codeUrl, viewUrl, infoText, technologies }) => 
           <BigLinkButton icon={<LinkIcon />} text="View" url={viewUrl} customClass="link" clickAction={clearHover} />
         </div>
       </div>
+      <div className="technologies">
+        <h3>{name}</h3>
+        {technologies}
+      </div>
+
       <p className="project-text">{infoText}</p>
-      <div className="technologies">{technologies}</div>
     </div>
   );
 };

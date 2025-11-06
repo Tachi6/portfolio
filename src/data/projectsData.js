@@ -6,6 +6,7 @@ import { techsData } from './TechsData.jsx';
 
 export const projectsData = {
   cocktails: {
+    name: 'Cocktails',
     image: cocktails,
     codeUrl: 'https://github.com/Tachi6/cocktails',
     viewUrl: 'https://cocktails-tachi6.netlify.app/',
@@ -13,6 +14,7 @@ export const projectsData = {
     technologies: [techsData.html, techsData.css, techsData.js],
   },
   dragonBall: {
+    name: 'Dragon Ball Z',
     image: dragonBall,
     codeUrl: 'https://github.com/Tachi6/dragon-ball',
     viewUrl: 'https://dragon-ball-z-vue.netlify.app/',
@@ -20,6 +22,7 @@ export const projectsData = {
     technologies: [techsData.vue, techsData.js],
   },
   quickTrivia: {
+    name: 'Quick Trivia',
     image: quickTrivia,
     codeUrl: 'https://github.com/Tachi6/quick-trivia',
     viewUrl: 'https://quick-trivia-react.netlify.app/',
@@ -27,6 +30,7 @@ export const projectsData = {
     technologies: [techsData.react, techsData.js],
   },
   portfolio: {
+    name: 'Portfolio',
     image: portfolio,
     codeUrl: 'https://github.com/Tachi6/portfolio',
     viewUrl: 'https://portfolio-david-gonzalez-de-la-rosa.netlify.app/',
