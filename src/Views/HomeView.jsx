@@ -2,7 +2,7 @@ import { Abilities } from '../components/Abilities';
 import { Contact } from '../components/Contact';
 import { Projects } from '../components/Projects';
 import { projectsData } from '../data/projectsData.js';
-import mainPhoto from '../assets/main-photo.jpg';
+import mainPhoto from '../assets/images/main-photo.jpg';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'motion/react';
 import { pageTransitions } from '../animations/pageTransition';

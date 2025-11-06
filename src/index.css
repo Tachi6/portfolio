@@ -49,17 +49,12 @@ html {
     border: 1px solid var(--dark-secondary-background-color);
   }
 
-  .small-button:hover,
-  button:hover {
-    border-color: var(--secondary-text-color);
-  }
-
   nav a:hover,
   footer a:hover {
     filter: brightness(150%);
   }
 
-  .double-quote-color {
+  .double-quote-icon {
     fill: var(--dark-primary-text-color);
   }
 
@@ -90,18 +85,13 @@ html {
     outline: 1px solid var(--light-secondary-background-color);
   }
 
-  .small-button:hover,
-  button:hover {
-    border-color: var(--secondary-text-color);
-  }
-
   nav a:hover,
   footer a:hover {
     /* TODO: test light mode */
     filter: brightness(50%);
   }
 
-  .double-quote-color {
+  .double-quote-icon {
     fill: var(--light-primary-text-color);
   }
 

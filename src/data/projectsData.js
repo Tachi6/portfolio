@@ -1,7 +1,7 @@
-import cocktails from '../assets/cocktails.png';
-import dragonBall from '../assets/dragon-ball.png';
-import quickTrivia from '../assets/quick-trivia.png';
-import portfolio from '../assets/portfolio.png';
+import cocktails from '../assets/images/cocktails.png';
+import dragonBall from '../assets/images/dragon-ball.png';
+import quickTrivia from '../assets/images/quick-trivia.png';
+import portfolio from '../assets/images/portfolio.png';
 import { techsData } from './TechsData.jsx';
 
 export const projectsData = {

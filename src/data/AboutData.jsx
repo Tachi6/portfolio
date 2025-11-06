@@ -4,7 +4,7 @@ export const aboutData = [
   {
     label: 'Que estoy buscando',
     content:
-      'Estoy buscando mi primera oportunidad como Desarrollador Front-End Junior. Mi objetivo es iniciar mi carrera en el sector tecnológico, poniendo en práctica mi formación y mi ética de trabajo rigurosa adquirida en el sector óptico, para crecer profesionalmente. Busco aprender de otros desarrolladores, profundizar en las tecnologías web, entender las metodologias de trabajo profesionales y colaborar en la creación o expansión de proyectos.',
+      'Estoy buscando mi primera oportunidad como Desarrollador Front-End Junior. Mi objetivo es iniciar mi carrera en el sector tecnológico, poniendo en práctica mi formación y mi ética de trabajo adquirida en el sector óptico, para crecer profesionalmente. Busco aprender de otros desarrolladores, profundizar en las tecnologías web, entender las metodologias de trabajo profesionales y colaborar en la creación o expansión de proyectos.',
   },
   {
     label: 'Qué puedo aportar',

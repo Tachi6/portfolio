@@ -1,9 +1,9 @@
-import { HtmlLogo } from '../icons/HtmlLogo';
-import { CssLogo } from '../icons/CssLogo';
-import { JavaScriptLogo } from '../icons/JavaScriptLogo';
-import { TypeScriptLogo } from '../icons/TypeScriptLogo';
-import { VueLogo } from '../icons/VueLogo';
-import { ReactLogo } from '../icons/ReactLogo';
+import { HtmlLogo } from '../logos/HtmlLogo';
+import { CssLogo } from '../logos/CssLogo';
+import { JavaScriptLogo } from '../logos/JavaScriptLogo';
+import { TypeScriptLogo } from '../logos/TypeScriptLogo';
+import { VueLogo } from '../logos/VueLogo';
+import { ReactLogo } from '../logos/ReactLogo';
 
 export const techsData = {
   html: <HtmlLogo />,

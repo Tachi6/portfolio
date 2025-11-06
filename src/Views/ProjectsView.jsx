@@ -3,9 +3,9 @@ import { Projects } from '../components/Projects';
 import { projectsData } from '../data/projectsData.js';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'motion/react';
-import { ReactLogo } from '../icons/ReactLogo';
-import { VueLogo } from '../icons/VueLogo';
-import { JavaScriptLogo } from '../icons/JavaScriptLogo';
+import { ReactLogo } from '../logos/ReactLogo';
+import { VueLogo } from '../logos/VueLogo';
+import { JavaScriptLogo } from '../logos/JavaScriptLogo';
 
 export const ProjectsView = () => {
   return (

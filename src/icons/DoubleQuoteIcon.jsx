@@ -1,7 +1,7 @@
 export const DoubleQuoteIcon = () => {
   return (
     <svg
-      className="double-quote-color"
+      className="double-quote-icon"
       fill="#000000"
       height="44px"
       viewBox="0 0 8 8"

@@ -1,4 +1,4 @@
-export const LinkedinIcon = () => {
+export const LinkedinLogo = () => {
   return (
     <svg
       className="icon"
