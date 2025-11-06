@@ -80,6 +80,7 @@ p {
 }
 
 .main-info {
+  min-height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,8 +129,12 @@ h2 {
 
 .project {
   max-width: 350px;
+  min-height: 290px;
   border: 10px solid transparent;
   border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   overflow: hidden;
   position: relative;
 }
@@ -383,6 +388,10 @@ footer span {
     font-size: 25px;
   }
 
+  .project {
+    min-height: 270px;
+  }
+
   .project-logo {
     transform: scale(0.75);
   }
@@ -414,6 +423,7 @@ footer span {
   }
 
   .top-content {
+    min-height: 450px;
     gap: 10px;
     flex-direction: column;
     align-items: center;
@@ -435,6 +445,7 @@ footer span {
   }
 
   .main-info {
+    min-height: 290px;
     align-items: center;
   }
 
