@@ -6,6 +6,9 @@ import { pageTransitions } from '../animations/pageTransition';
 export const Footer = () => {
   return (
     <motion.footer initial={pageTransitions.initial} animate={pageTransitions.animate} exit={pageTransitions.exit}>
+      <p className="copyright">
+        &copy; 2025 David Gonzalez de la Rosa<span>|</span>
+      </p>
       <div>
         <p>
           Design inspired in{' '}
@@ -19,10 +22,8 @@ export const Footer = () => {
           <Link to="https://react.dev/" target="_blank">
             React
           </Link>
-          <span>|</span>
         </p>
       </div>
-      <p className="copyright">&copy; 2025 David Gonzalez de la Rosa</p>
     </motion.footer>
   );
 };

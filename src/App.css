@@ -17,6 +17,7 @@
 
 header {
   height: 70px;
+  padding-bottom: 4px;
   width: calc(100% - 16px);
   max-width: 1280px;
   border-bottom-left-radius: 28px;
@@ -337,6 +338,7 @@ nav a {
 
 footer {
   width: 100%;
+  padding-bottom: 2px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -374,9 +376,15 @@ footer span {
 
 /* Responsive */
 @media (max-width: 960px) {
+  header {
+    height: var(--header-responsive-height);
+  }
+
   .page-container {
+    min-height: calc(100vh - var(--footer-responsive-height));
     max-width: 95%;
-    padding: calc(var(--header-height) + 20px) 0 20px 0;
+    padding: calc(var(--header-responsive-height) + 20px) 0 20px 0;
+    gap: 0;
   }
 
   h1 {
@@ -423,7 +431,7 @@ footer span {
   }
 
   .top-content {
-    min-height: 450px;
+    min-height: 435px;
     gap: 10px;
     flex-direction: column;
     align-items: center;
@@ -445,7 +453,8 @@ footer span {
   }
 
   .main-info {
-    min-height: 290px;
+    min-height: 275px;
+    gap: 5px;
     align-items: center;
   }
 
@@ -454,12 +463,12 @@ footer span {
   }
 
   .projects-container {
-    padding-top: calc(var(--header-height) + 7.5px);
-    gap: 20px;
+    padding-top: calc(var(--header-responsive-height) + 7.5px);
+    gap: 10px;
   }
 
   .about-me-container {
-    padding-top: calc(var(--header-height) + 7.5px);
+    padding-top: calc(var(--header-responsive-height) + 7.5px);
     gap: 0;
   }
 
@@ -478,11 +487,13 @@ footer span {
   }
 
   footer {
+    height: var(--footer-responsive-height);
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 3px;
   }
 
-  footer p:last-child span {
+  .copyright span {
     display: none;
   }
 

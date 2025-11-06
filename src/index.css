@@ -12,7 +12,9 @@
   --secondary-text-color: #9c9c9c;
 
   --header-height: 70px;
+  --header-responsive-height: 60px;
   --footer-height: 70px;
+  --footer-responsive-height: 60px;
 }
 
 * {
