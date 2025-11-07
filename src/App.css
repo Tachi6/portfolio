@@ -20,8 +20,8 @@ header {
   padding-bottom: 4px;
   width: calc(100% - 16px);
   max-width: 1280px;
-  border-bottom-left-radius: 28px;
-  border-bottom-right-radius: 28px;
+  border-bottom-left-radius: 26px;
+  border-bottom-right-radius: 26px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -31,8 +31,8 @@ header {
 
 footer {
   height: 70px;
-  border-top-left-radius: 28px;
-  border-top-right-radius: 28px;
+  border-top-left-radius: 26px;
+  border-top-right-radius: 26px;
 }
 
 .top-content {
@@ -67,7 +67,7 @@ p {
   display: inline-block;
 }
 
-.ability-text {
+h4 {
   font-size: 18px;
   font-weight: 400;
   max-width: 580px;
@@ -131,8 +131,8 @@ h2 {
 .project {
   max-width: 350px;
   min-height: 290px;
-  border: 10px solid transparent;
-  border-radius: 10%;
+  padding: 10px;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -145,6 +145,8 @@ h2 {
 }
 
 .project-image {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
   width: 100%;
   object-fit: contain;
 }
@@ -156,6 +158,10 @@ h2 {
 h3 {
   font-size: 26px;
   font-weight: 400;
+}
+
+.technologies h3 {
+  padding-right: 20px;
 }
 
 .project-text {
@@ -203,12 +209,16 @@ h3 {
   height: 20px;
 }
 
+.add-icon {
+  fill: var(--secondary-text-color);
+}
+
 button,
 .small-button {
   height: 28px;
   min-width: 28px;
   padding: 0px 3px;
-  border-radius: 3px;
+  border-radius: 4px;
   cursor: pointer;
   background-color: transparent;
   color: var(--secondary-text-color);
@@ -273,7 +283,7 @@ button,
 .big-button {
   border: 1px solid var(--secondary-text-color);
   display: flex;
-  border-radius: 10%;
+  border-radius: 8px;
   padding: 10px;
 }
 
@@ -287,7 +297,7 @@ button,
 .technology-box {
   width: 28px;
   height: 28px;
-  border-radius: 3%;
+  border-radius: 4px;
   padding: 3px;
   display: flex;
   justify-content: center;
@@ -320,11 +330,12 @@ nav a {
 }
 
 /* TEXTBOX */
-.text-box {
+.text-box,
+.tech-box {
   margin-top: 40px;
   min-width: 260px;
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 26px;
   position: relative;
 }
 
@@ -342,7 +353,56 @@ nav a {
 }
 
 /* ESTUDIOS */
-.text-box ul {
+.techs-container {
+  flex-direction: row;
+}
+
+.tech-box {
+  flex: 1;
+  max-width: 500px;
+  height: fit-content;
+  position: relative;
+}
+
+.tech-label {
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 15px;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.tech-label span {
+  height: 24px;
+}
+
+.course-container {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.tech-label img {
+  display: inline-block;
+  height: 22px;
+}
+
+.tech-box .small-button-container {
+  position: absolute;
+  bottom: 35.5px;
+  right: 35.5px;
+}
+
+.tech-box .small-button {
+  padding: 0;
+}
+
+.tech-box ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   /* This is better for small screens, once min() is better supported */
@@ -413,7 +473,7 @@ footer span {
   }
 
   h3 {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .project {
@@ -457,7 +517,7 @@ footer span {
     align-items: center;
   }
 
-  .ability-text {
+  h4 {
     font-size: 16px;
   }
 

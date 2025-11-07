@@ -23,7 +23,7 @@ export const Project = ({ name, image, codeUrl, viewUrl, infoText, technologies 
         </div>
       </div>
       <div className="technologies">
-        <h3>{name}</h3>
+        <h3 className="expanded">{name}</h3>
         {technologies}
       </div>
 
