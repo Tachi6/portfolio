@@ -6,6 +6,7 @@ import { motion } from 'motion/react';
 import { ReactLogo } from '../logos/ReactLogo';
 import { VueLogo } from '../logos/VueLogo';
 import { JavaScriptLogo } from '../logos/JavaScriptLogo';
+import { CustomLabel } from '../components/CustomLabel.jsx';
 
 export const ProjectsView = () => {
   return (
@@ -16,20 +17,17 @@ export const ProjectsView = () => {
       exit={pageTransitions.exit}
     >
       <Projects
-        label="Proyectos React"
-        icon={<ReactLogo height={28} />}
+        label={<CustomLabel label="Proyectos React" icon={<ReactLogo height={28} />} />}
         projects={[projectsData.portfolio, projectsData.quickTrivia]}
       />
       <Projects
-        label="Proyectos Vue"
-        icon={<VueLogo height={28.5} />}
-        logoStyle="move-bottom"
+        label={<CustomLabel label="Proyectos Vue" icon={<VueLogo height={28.5} />} logoStyle="move-bottom" />}
         projects={[projectsData.dragonBall]}
       />
       <Projects
-        label="Proyectos Vanilla JS"
-        icon={<JavaScriptLogo height={24.5} />}
-        logoStyle="move-bottom"
+        label={
+          <CustomLabel label="Proyectos Vanilla JS" icon={<JavaScriptLogo height={24.5} />} logoStyle="move-bottom" />
+        }
         projects={[projectsData.cocktails]}
       />
     </motion.section>

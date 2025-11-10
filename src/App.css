@@ -13,6 +13,7 @@
   gap: 20px;
   flex-direction: column;
   justify-content: space-evenly;
+  transition: 0.5s ease-out;
 }
 
 header {
@@ -20,19 +21,13 @@ header {
   padding-bottom: 4px;
   width: calc(100% - 16px);
   max-width: 1280px;
-  border-bottom-left-radius: 26px;
-  border-bottom-right-radius: 26px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   position: fixed;
   z-index: 1;
-}
-
-footer {
-  height: 70px;
-  border-top-left-radius: 26px;
-  border-top-right-radius: 26px;
 }
 
 .top-content {
@@ -132,7 +127,7 @@ h2 {
   max-width: 350px;
   min-height: 290px;
   padding: 10px;
-  border-radius: 16px;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -145,8 +140,8 @@ h2 {
 }
 
 .project-image {
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
   width: 100%;
   object-fit: contain;
 }
@@ -209,7 +204,7 @@ h3 {
   height: 20px;
 }
 
-.add-icon {
+.show-close-icon {
   fill: var(--secondary-text-color);
 }
 
@@ -330,12 +325,11 @@ nav a {
 }
 
 /* TEXTBOX */
-.text-box,
-.tech-box {
+.text-box {
   margin-top: 40px;
   min-width: 260px;
   padding: 20px;
-  border-radius: 26px;
+  border-radius: 12px;
   position: relative;
 }
 
@@ -354,65 +348,112 @@ nav a {
 
 /* ESTUDIOS */
 .techs-container {
-  flex-direction: row;
+  justify-content: flex-start;
+  /* flex-direction: row;
+  flex-wrap: wrap;
+  position: relative; */
+}
+
+.tech-box-container {
+  position: relative;
+  transition: 0.5s ease-out;
 }
 
 .tech-box {
-  flex: 1;
-  max-width: 500px;
-  height: fit-content;
-  position: relative;
-}
-
-.tech-label {
-  border-radius: 8px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px 15px;
-  gap: 10px;
-  margin-bottom: 15px;
-}
-
-.tech-label span {
-  height: 24px;
-}
-
-.course-container {
-  padding-left: 10px;
+  width: 100%;
+  min-width: 260px;
+  padding: 15px 20px;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  gap: 10px;
+  transition: 0.5s ease-out;
+  overflow: hidden;
+}
+
+.tech-label-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   gap: 10px;
 }
 
-.tech-label img {
-  display: inline-block;
+.tech-box img {
   height: 22px;
 }
 
-.tech-box .small-button-container {
-  position: absolute;
-  bottom: 35.5px;
-  right: 35.5px;
+.tech-label {
+  font-size: 20px;
+  /* align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  padding: 5px 15px;
+  gap: 10px;
+  margin-bottom: 10px;
+  max-height: 37px;
+  width: 100%; */
+  /* TODO: ellipsis in responsive*/
+  /* overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; */
 }
 
-.tech-box .small-button {
+.course-info {
+  padding-left: 10px;
+  margin-top: 5px;
+  /* position: absolute;
+  top: 73;
+  left: 0;
+  z-index: 1;
+  background-color: var(--dark-background-color);
+  border: 1px solid white; */
+}
+
+.course-info ul {
+  list-style-type: '- ';
+  padding-left: 15px;
+}
+
+.tech-box-container .small-button-container {
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+}
+
+.tech-box-container .small-button {
   padding: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.course-info p {
+  font-size: 14px;
 }
 
 .tech-box ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); */
   /* This is better for small screens, once min() is better supported */
   /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
-  gap: 20px;
+  /* gap: 20px; */
+  padding-bottom: 10px;
+  padding-left: 25px;
+}
+
+.tech-box li {
+  color: var(--secondary-text-color);
+  font-weight: 100;
+  font-size: 14px;
 }
 
 /* FOOTER */
 
 footer {
+  height: 70px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
   width: 100%;
   padding-bottom: 2px;
   display: flex;

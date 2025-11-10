@@ -7,6 +7,7 @@ import mainPhoto from '../assets/images/main-photo.jpg';
 import { motion } from 'motion/react';
 import { pageTransitions } from '../animations/pageTransition';
 import { techsData } from '../data/TechsData.jsx';
+import { CustomLabel } from '../components/CustomLabel.jsx';
 
 export const HomeView = () => {
   return (
@@ -31,7 +32,10 @@ export const HomeView = () => {
         </div>
         <img src={mainPhoto} alt="main-photo" className="main-photo" />
       </div>
-      <Projects label="Proyectos destacados" projects={[projectsData.cocktails, projectsData.dragonBall]} />
+      <Projects
+        label={<CustomLabel label="Proyectos destacados" />}
+        projects={[projectsData.cocktails, projectsData.dragonBall]}
+      />
     </motion.section>
   );
 };

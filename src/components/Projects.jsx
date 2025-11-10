@@ -1,13 +1,10 @@
 import { Project } from './Project';
 import { TechnologyBox } from './TechnologyBox';
 
-export const Projects = ({ label, icon, projects, logoStyle = '' }) => {
+export const Projects = ({ label, projects }) => {
   return (
     <div>
-      <h2>
-        <span className={`project-logo ${logoStyle}`}>{icon}</span>
-        {label}
-      </h2>
+      {label}
       <div className="projects">
         {projects.map((project) => (
           <Project

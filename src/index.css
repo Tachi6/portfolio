@@ -36,8 +36,7 @@ html {
   }
 
   header,
-  footer,
-  .tech-label {
+  footer {
     background-color: var(--dark-secondary-background-color);
   }
 
@@ -48,9 +47,12 @@ html {
   .technology-box,
   .small-button,
   .text-box,
-  .tech-box,
   button {
     border: 1px solid var(--dark-secondary-background-color);
+  }
+
+  .tech-box {
+    outline: 1px solid var(--dark-secondary-background-color);
   }
 
   nav a:hover,
@@ -76,17 +78,19 @@ html {
   }
 
   header,
-  footer,
-  .tech-label {
+  footer {
     background-color: var(--light-secondary-background-color);
   }
 
   .technology-box,
   .small-button,
   .text-box,
-  .tech-box,
   button {
     border: 1px solid var(--light-secondary-background-color);
+  }
+
+  .tech-box {
+    outline: 1px solid var(--light-secondary-background-color);
   }
 
   .project {
