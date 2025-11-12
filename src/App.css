@@ -110,8 +110,8 @@ h2 {
   margin-right: 8px;
 }
 
-.move-bottom {
-  padding-top: 0.5px;
+.projects-container h2 span svg {
+  height: 24px;
 }
 
 .projects {
@@ -198,21 +198,13 @@ h3 {
   gap: 10px;
 }
 
-.icon {
-  fill: var(--secondary-text-color);
-  width: 20px;
-  height: 20px;
-}
-
 .show-close-icon {
   fill: var(--secondary-text-color);
 }
 
 button,
-.small-button {
-  height: 28px;
-  min-width: 28px;
-  padding: 0px 3px;
+.small-button,
+.medium-button {
   border-radius: 4px;
   cursor: pointer;
   background-color: transparent;
@@ -222,12 +214,41 @@ button,
   align-items: center;
 }
 
+button,
 .small-button {
-  width: 28px;
+  height: 28px;
+  min-width: 28px;
 }
 
-button,
-.small-button span {
+.small-button {
+  width: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-button svg {
+  height: 20px;
+}
+
+.mail-button svg {
+  margin-left: 6px;
+  height: 20px;
+}
+
+/* Customize contact buttons & big buttons svg color */
+
+.small-button svg g g,
+.big-button svg g g,
+.big-button svg {
+  fill: var(--secondary-text-color);
+}
+
+.small-button svg path {
+  fill: var(--secondary-text-color);
+}
+
+button {
   font-size: 16px;
   font-weight: 300;
 }
@@ -240,13 +261,8 @@ button,
 }
 
 .mail {
-  padding: 0 5px;
+  padding: 0 3px 0 4px;
   user-select: text;
-}
-
-.copy-icon {
-  fill: var(--secondary-text-color);
-  transform: translateX(4px);
 }
 
 .clipboard {
@@ -257,15 +273,6 @@ button,
 
 .clipboard.show {
   opacity: 1;
-}
-
-.link {
-  padding: 0;
-}
-
-.link svg {
-  transform: rotate(45deg);
-  margin-top: 0;
 }
 
 .big-button-container {
@@ -297,6 +304,10 @@ button,
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.technology-box svg {
+  height: 20px;
 }
 
 /* NAVBAR */
@@ -331,6 +342,10 @@ nav a {
   padding: 20px;
   border-radius: 12px;
   position: relative;
+}
+
+.text-box span svg {
+  height: 36px;
 }
 
 .text-box-label {
@@ -428,6 +443,11 @@ nav a {
   border-bottom-right-radius: 12px;
 }
 
+.tech-box-container .small-button svg {
+  height: 16px;
+  width: 16px;
+}
+
 .course-info p {
   font-size: 14px;
 }
@@ -446,6 +466,34 @@ nav a {
   color: var(--secondary-text-color);
   font-weight: 100;
   font-size: 14px;
+}
+
+/* Medium Button */
+.techs-container .technologies {
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.medium-button-container {
+  width: 62px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5px;
+}
+
+.medium-button {
+  width: 48px;
+  height: 48px;
+}
+
+.medium-button svg {
+  height: 36px;
+}
+
+.medium-button-container p {
+  font-size: 12px;
 }
 
 /* FOOTER */
@@ -482,6 +530,7 @@ footer span {
 
 @media (hover: hover) {
   .small-button.hover,
+  .medium-button.hover,
   button.hover {
     border-color: var(--secondary-text-color);
   }

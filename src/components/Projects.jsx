@@ -3,7 +3,7 @@ import { TechnologyBox } from './TechnologyBox';
 
 export const Projects = ({ label, projects }) => {
   return (
-    <div>
+    <article>
       {label}
       <div className="projects">
         {projects.map((project) => (
@@ -20,6 +20,6 @@ export const Projects = ({ label, projects }) => {
           />
         ))}
       </div>
-    </div>
+    </article>
   );
 };

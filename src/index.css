@@ -46,6 +46,7 @@ html {
 
   .technology-box,
   .small-button,
+  .medium-button,
   .text-box,
   button {
     border: 1px solid var(--dark-secondary-background-color);
@@ -60,13 +61,17 @@ html {
     filter: brightness(150%);
   }
 
-  .double-quote-icon {
+  .text-box span svg {
     fill: var(--dark-primary-text-color);
   }
 
   nav a.active,
   .course {
     color: var(--dark-primary-text-color);
+  }
+
+  .medium-button-container .medium-button.selected {
+    border-color: var(--dark-primary-text-color);
   }
 }
 
@@ -84,6 +89,7 @@ html {
 
   .technology-box,
   .small-button,
+  .medium-button,
   .text-box,
   button {
     border: 1px solid var(--light-secondary-background-color);
@@ -103,12 +109,16 @@ html {
     filter: brightness(50%);
   }
 
-  .double-quote-icon {
+  .text-box span svg {
     fill: var(--light-primary-text-color);
   }
 
   nav a:active,
   .course {
     color: var(--light-primary-text-color);
+  }
+
+  .medium-button-container .medium-button.selected {
+    border-color: var(--light-primary-text-color);
   }
 }

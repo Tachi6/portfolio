@@ -1,7 +1,7 @@
-export const CustomLabel = ({ label, icon, logoStyle = '' }) => {
+export const CustomLabel = ({ label, icon }) => {
   return (
     <h2>
-      <span className={`project-logo ${logoStyle}`}>{icon}</span>
+      <span className="project-logo">{icon}</span>
       {label}
     </h2>
   );

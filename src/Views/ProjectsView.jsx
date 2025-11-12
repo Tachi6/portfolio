@@ -17,17 +17,12 @@ export const ProjectsView = () => {
       exit={pageTransitions.exit}
     >
       <Projects
-        label={<CustomLabel label="Proyectos React" icon={<ReactLogo height={28} />} />}
+        label={<CustomLabel label="Proyectos React" icon={<ReactLogo />} />}
         projects={[projectsData.portfolio, projectsData.quickTrivia]}
       />
+      <Projects label={<CustomLabel label="Proyectos Vue" icon={<VueLogo />} />} projects={[projectsData.dragonBall]} />
       <Projects
-        label={<CustomLabel label="Proyectos Vue" icon={<VueLogo height={28.5} />} logoStyle="move-bottom" />}
-        projects={[projectsData.dragonBall]}
-      />
-      <Projects
-        label={
-          <CustomLabel label="Proyectos Vanilla JS" icon={<JavaScriptLogo height={24.5} />} logoStyle="move-bottom" />
-        }
+        label={<CustomLabel label="Proyectos Vanilla JS" icon={<JavaScriptLogo />} />}
         projects={[projectsData.cocktails]}
       />
     </motion.section>
