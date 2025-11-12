@@ -4,9 +4,7 @@ export const TextBox = ({ label, content }) => {
   return (
     <article className="text-box">
       <p className="text-box-label">
-        <span>
-          <DoubleQuoteIcon />
-        </span>
+        <DoubleQuoteIcon />
         {label}
       </p>
       <p>{content}</p>

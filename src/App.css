@@ -107,7 +107,7 @@ h2 {
 }
 
 .project-logo {
-  margin-right: 8px;
+  margin-right: 9px;
 }
 
 .projects-container h2 span svg {
@@ -344,17 +344,16 @@ nav a {
   position: relative;
 }
 
-.text-box span svg {
+.text-box svg {
   height: 36px;
 }
 
 .text-box-label {
-  height: 44px;
   font-size: 18px;
   font-weight: 400;
   position: absolute;
   padding: 0 5px 0 10px;
-  top: -24px;
+  top: -20px;
   left: 20px;
   display: inline-flex;
   align-items: center;
@@ -364,26 +363,36 @@ nav a {
 /* ESTUDIOS */
 .techs-container {
   justify-content: flex-start;
-  /* flex-direction: row;
   flex-wrap: wrap;
-  position: relative; */
 }
 
 .tech-box-container {
+  margin: 0 auto;
+  width: 700px;
   position: relative;
   transition: 0.5s ease-out;
 }
 
 .tech-box {
   width: 100%;
-  min-width: 260px;
   padding: 15px 20px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   gap: 10px;
   transition: 0.5s ease-out;
   overflow: hidden;
+}
+
+.courses-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.courses-label svg {
+  height: 26px;
 }
 
 .tech-label-container {
@@ -416,12 +425,6 @@ nav a {
 .course-info {
   padding-left: 10px;
   margin-top: 5px;
-  /* position: absolute;
-  top: 73;
-  left: 0;
-  z-index: 1;
-  background-color: var(--dark-background-color);
-  border: 1px solid white; */
 }
 
 .course-info ul {
@@ -453,11 +456,6 @@ nav a {
 }
 
 .tech-box ul {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); */
-  /* This is better for small screens, once min() is better supported */
-  /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
-  /* gap: 20px; */
   padding-bottom: 10px;
   padding-left: 25px;
 }
@@ -472,6 +470,7 @@ nav a {
 .techs-container .technologies {
   flex-wrap: wrap;
   gap: 0;
+  row-gap: 5px;
 }
 
 .medium-button-container {
@@ -663,6 +662,55 @@ footer span {
   .project-buttons.show .big-button {
     opacity: 1;
     pointer-events: all;
+  }
+
+  .text-box {
+    padding: 15px;
+    margin-top: 25px;
+  }
+
+  .text-box svg {
+    height: 28px;
+  }
+
+  .text-box-label {
+    font-size: 16px;
+    top: -16px;
+  }
+
+  .techs-container {
+    gap: 5px;
+  }
+
+  .tech-box-container {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .tech-box {
+    padding: 10px 15px;
+  }
+
+  .tech-box img {
+    height: 18px;
+  }
+
+  .tech-label {
+    font-size: 16px;
+  }
+
+  .course {
+    font-size: 19px;
+    line-clamp: 2;
+  }
+
+  .medium-button {
+    width: 36px;
+    height: 36px;
+  }
+
+  .medium-button svg {
+    height: 26px;
   }
 
   footer {

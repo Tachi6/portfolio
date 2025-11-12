@@ -15,7 +15,7 @@ export const Projects = ({ label, projects }) => {
             viewUrl={project.viewUrl}
             infoText={project.infoText}
             technologies={project.technologies.map((technology) => (
-              <TechnologyBox key={project.codeUrl + technology.type.name} logo={technology} />
+              <TechnologyBox key={project.codeUrl + technology.name} logo={technology.logo} />
             ))}
           />
         ))}

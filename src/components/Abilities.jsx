@@ -6,7 +6,7 @@ export const Abilities = ({ abilities }) => {
       <h4>FRONT-END WEB DEVELOPER</h4>
       <div className="abilities-logos">
         {abilities.map((ability) => (
-          <TechnologyBox key={`ability-${ability.type.name}`} logo={ability} />
+          <TechnologyBox key={`ability-${ability.name}`} logo={ability.logo} />
         ))}
       </div>
     </div>

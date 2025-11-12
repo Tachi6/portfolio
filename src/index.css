@@ -61,7 +61,7 @@ html {
     filter: brightness(150%);
   }
 
-  .text-box span svg {
+  .text-box svg {
     fill: var(--dark-primary-text-color);
   }
 
@@ -109,7 +109,7 @@ html {
     filter: brightness(50%);
   }
 
-  .text-box span svg {
+  .text-box svg {
     fill: var(--light-primary-text-color);
   }
 

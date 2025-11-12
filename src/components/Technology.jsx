@@ -15,7 +15,7 @@ export const Technology = ({ course }) => {
   }, [showCourseInfo]);
 
   return (
-    <article className="tech-box-container" style={{ height: `${courseHeight}px` }}>
+    <article className="tech-box-container">
       <div className="tech-box" style={{ height: `${courseHeight}px` }}>
         <h3 className="course">{course.course}</h3>
         <div className="tech-label-container">
