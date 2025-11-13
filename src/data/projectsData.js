@@ -2,7 +2,7 @@ import cocktails from '../assets/images/cocktails.png';
 import dragonBall from '../assets/images/dragon-ball.png';
 import quickTrivia from '../assets/images/quick-trivia.png';
 import portfolio from '../assets/images/portfolio.png';
-import { techsData } from './TechsData.jsx';
+import { techsData } from './techsData.jsx';
 
 export const projectsData = {
   cocktails: {

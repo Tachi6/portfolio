@@ -1,5 +1,5 @@
 import { centers } from './centersData';
-import { Techs } from './TechsData';
+import { Techs } from './techsData';
 
 export const formationData = [
   {

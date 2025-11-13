@@ -1,6 +1,6 @@
 import { pageTransitions } from '../animations/pageTransition.js';
 import { TextBox } from '../components/TextBox.jsx';
-import { aboutData } from '../data/AboutData.jsx';
+import { aboutData } from '../data/aboutData.jsx';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'motion/react';
 

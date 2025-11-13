@@ -6,7 +6,7 @@ import { formationData } from '../data/formationData.js';
 import { MediumLinkButton } from '../components/MediumButton.jsx';
 import { useEffect, useState } from 'react';
 import { TechButtonContext } from '../context/TechButtonContext.jsx';
-import { techsData, Techs } from '../data/TechsData.jsx';
+import { techsData, Techs } from '../data/techsData.jsx';
 
 export const TechsView = () => {
   const [formations, setFormations] = useState([]);

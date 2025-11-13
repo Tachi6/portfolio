@@ -6,7 +6,7 @@ import mainPhoto from '../assets/images/main-photo.jpg';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'motion/react';
 import { pageTransitions } from '../animations/pageTransition';
-import { Techs, techsData } from '../data/TechsData.jsx';
+import { Techs, techsData } from '../data/techsData.jsx';
 import { CustomLabel } from '../components/CustomLabel.jsx';
 
 export const HomeView = () => {
