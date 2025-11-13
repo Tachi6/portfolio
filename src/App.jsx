@@ -7,9 +7,14 @@ import { ProjectsView } from './Views/ProjectsView';
 import { AnimatePresence } from 'motion/react';
 import { AboutView } from './Views/AboutView';
 import { TechsView } from './Views/TechsView';
+import { useEffect } from 'react';
 
 function App() {
   const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top on every location change
+  }, [location]);
 
   return (
     <>
@@ -20,6 +25,7 @@ function App() {
           <Route path="/projects" element={<ProjectsView />} />
           <Route path="/techs" element={<TechsView />} />
           <Route path="/about" element={<AboutView />} />
+          <Route path="*" element={<HomeView />} />
         </Routes>
       </AnimatePresence>
       <Footer />
