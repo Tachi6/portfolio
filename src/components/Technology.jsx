@@ -1,7 +1,7 @@
 import { SmallButton } from './SmallButton';
 import { AddIcon } from '../icons/AddIcon';
 import { RemoveIcon } from '../icons/RemoveIcon';
-import { Fragment, useEffect, useRef, useState } from 'react';
+import { Fragment, useLayoutEffect, useRef, useState } from 'react';
 
 export const Technology = ({ course }) => {
   const baseHeight = useRef(window.innerWidth <= 960 ? 76 : 93);
@@ -13,7 +13,7 @@ export const Technology = ({ course }) => {
   const [techBoxHeight, setTechBoxHeight] = useState(window.innerWidth <= 960 ? 100 : 125);
   const enableTransition = useRef(false);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const initHeight = baseHeight.current + courseHeight.current.offsetHeight;
     const expandHeight = showCourseInfo ? courseInfoHeight.current.offsetHeight + bottomPadding.current : 0;
 
@@ -24,6 +24,24 @@ export const Technology = ({ course }) => {
     enableTransition.current = true;
     setShowCourseInfo(!showCourseInfo);
   };
+
+  // useLayoutEffect(() => {
+  //   const updateDimensions = () => {
+  //     if (innerWidth.current > 960 && window.innerWidth > 960) return;
+  //     if (innerWidth.current < 960 && window.innerWidth < 960) return;
+
+  //     console.log('ejecuto');
+  //     innerWidth.current = window.innerWidth;
+  //     baseHeight.current = innerWidth.current <= 960 ? 76 : 93;
+  //     bottomPadding.current = innerWidth.current <= 960 ? 5 : 10;
+  //     courseHeight.current = courseHeight.current.offsetHeight;
+  //     courseInfoHeight.current = courseInfoHeight.current.offsetHeight;
+
+  //     // setTechBoxHeight(initHeight + expandHeight);
+  //   };
+
+  //   window.addEventListener('resize', updateDimensions);
+  // }, []);
 
   return (
     <article className={`tech-box-container ${enableTransition.current ? 'do-transition' : ''}`}>

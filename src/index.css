@@ -28,54 +28,55 @@ html {
   scrollbar-gutter: stable both-edges;
 }
 
-@media (prefers-color-scheme: dark) {
-  body,
-  .text-box-label {
-    background-color: var(--dark-background-color);
-    color: var(--dark-primary-text-color);
-  }
-
-  header,
-  footer {
-    background-color: var(--dark-secondary-background-color);
-  }
-
-  .project {
-    border: 1px solid var(--dark-secondary-background-color);
-  }
-
-  .technology-box,
-  .small-button,
-  .medium-button,
-  .text-box,
-  button {
-    border: 1px solid var(--dark-secondary-background-color);
-  }
-
-  .tech-box {
-    outline: 1px solid var(--dark-secondary-background-color);
-  }
-
-  nav a:hover,
-  footer a:hover {
-    filter: brightness(150%);
-  }
-
-  .text-box svg {
-    fill: var(--dark-primary-text-color);
-  }
-
-  nav a.active,
-  .course {
-    color: var(--dark-primary-text-color);
-  }
-
-  .medium-button-container .medium-button.selected {
-    border-color: var(--dark-primary-text-color);
-  }
+/* TODO: temporal forze dark mode before theme changer implementation */
+/* @media (prefers-color-scheme: dark) { */
+body,
+.text-box-label {
+  background-color: var(--dark-background-color);
+  color: var(--dark-primary-text-color);
 }
 
-@media (prefers-color-scheme: light) {
+header,
+footer {
+  background-color: var(--dark-secondary-background-color);
+}
+
+.project {
+  border: 1px solid var(--dark-secondary-background-color);
+}
+
+.technology-box,
+.small-button,
+.medium-button,
+.text-box,
+button {
+  border: 1px solid var(--dark-secondary-background-color);
+}
+
+.tech-box {
+  outline: 1px solid var(--dark-secondary-background-color);
+}
+
+nav a:hover,
+footer a:hover {
+  filter: brightness(150%);
+}
+
+.text-box svg {
+  fill: var(--dark-primary-text-color);
+}
+
+nav a.active,
+.course {
+  color: var(--dark-primary-text-color);
+}
+
+.medium-button-container .medium-button.selected {
+  border-color: var(--dark-primary-text-color);
+}
+/* } */
+
+/* @media (prefers-color-scheme: light) {
   body,
   .text-box-label {
     background-color: var(--light-background-color);
@@ -105,7 +106,6 @@ html {
 
   nav a:hover,
   footer a:hover {
-    /* TODO: test light mode */
     filter: brightness(50%);
   }
 
@@ -121,4 +121,4 @@ html {
   .medium-button-container .medium-button.selected {
     border-color: var(--light-primary-text-color);
   }
-}
+} */
