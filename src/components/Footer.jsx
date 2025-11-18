@@ -9,7 +9,7 @@ export const Footer = () => {
     <motion.footer initial={pageTransitions.initial} animate={pageTransitions.animate} exit={pageTransitions.exit}>
       <div>
         <p>
-          Design inspired in{' '}
+          Design inspired in
           <Link to="https://www.figma.com/design/FkD7mvAN9yA2DgMXHSxl9c/Portfolio?m=auto&t=tXDZQODDBsE8oBdp-6">
             Portfolio
           </Link>
