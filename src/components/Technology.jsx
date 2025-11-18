@@ -4,6 +4,7 @@ import { RemoveIcon } from '../icons/RemoveIcon';
 import { Fragment, useLayoutEffect, useRef, useState } from 'react';
 
 export const Technology = ({ course }) => {
+  const referenceWidth = useRef(window.innerWidth);
   const courseHeight = useRef();
   const courseInfoHeight = useRef();
 
@@ -23,9 +24,18 @@ export const Technology = ({ course }) => {
 
     updateDimensions();
 
-    window.addEventListener('resize', updateDimensions);
+    const changeDimensions = () => {
+      if (referenceWidth.current > 960 && window.innerWidth > 960) return;
+      if (referenceWidth.current <= 960 && window.innerWidth <= 960) return;
 
-    return () => window.removeEventListener('resize', updateDimensions);
+      referenceWidth.current = window.innerWidth;
+
+      updateDimensions();
+    };
+
+    window.addEventListener('resize', changeDimensions);
+
+    return () => window.removeEventListener('resize', changeDimensions);
   }, [showCourseInfo]);
 
   const expandTechBox = () => {
