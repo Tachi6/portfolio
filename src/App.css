@@ -518,8 +518,10 @@ footer {
   align-items: center;
 }
 
-footer p {
+footer p,
+.copyright-container {
   display: inline-flex;
+  align-items: center;
 }
 
 footer a,
@@ -534,6 +536,44 @@ footer a::before {
 
 footer span {
   padding: 0 16px;
+}
+
+.theme-changer {
+  width: 48px;
+  height: 24px;
+  border-radius: 15px;
+  background-color: var(--secondary-text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2px;
+  padding-left: 2px;
+  position: relative;
+}
+
+.theme-selector {
+  position: absolute;
+  left: 1px;
+  right: unset;
+  background-color: var(--secondary-background-color);
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  transition: 0.5s ease-out;
+}
+
+.theme-selector.light-active {
+  left: unset;
+  right: 1px;
+}
+
+.theme-changer svg {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  z-index: 1;
+  fill: var(--primary-text-color);
+  filter: brightness(100%);
 }
 
 @media (hover: hover) {
@@ -732,11 +772,27 @@ footer span {
     gap: 3px;
   }
 
-  .copyright span {
+  footer div p:last-child span {
     display: none;
   }
 
   footer span {
     padding: 0 8px;
+  }
+
+  .theme-changer {
+    width: 44px;
+    height: 22px;
+    border-radius: 11px;
+  }
+
+  .theme-selector {
+    height: 20px;
+    width: 20px;
+  }
+
+  .theme-changer svg {
+    height: 18px;
+    width: 18px;
   }
 }
