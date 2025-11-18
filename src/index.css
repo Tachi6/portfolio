@@ -31,7 +31,9 @@ html {
   /* --secondary-background-color: #e4e4e4; */
   --secondary-background-color: #d8d8d8;
   --primary-text-color: #080808;
+  --alternative-primary-text-color: #f7f7f7;
   --secondary-text-color: #636363;
+  --alternative-secondary-text-color: #9c9c9c;
 }
 
 .dark nav a:hover,
@@ -44,25 +46,18 @@ html {
   filter: brightness(50%);
 }
 
-.dark .project-image-hover {
-  filter: brightness(33%) blur(4px);
-}
-
-/* TODO: theme this and borders */
-.light .project-image-hover {
-  filter: brightness(233%) blur(4px);
-}
-
 .dark .big-button svg g g,
 .dark .big-button svg {
   fill: var(--secondary-text-color);
 }
 
-/* TODO: theme this and borders */
 .light .big-button svg g g,
 .light .big-button svg {
-  fill: var(--secondary-background-color);
-  fill: var(--secondary-text-color);
+  fill: var(--alternative-secondary-text-color);
+}
+
+.light .big-button-container p {
+  color: var(--alternative-secondary-text-color);
 }
 
 body,

@@ -146,6 +146,10 @@ h2 {
   object-fit: contain;
 }
 
+.project-image-hover {
+  filter: brightness(33%) blur(4px);
+}
+
 h3 {
   font-size: 26px;
   font-weight: 400;
@@ -583,8 +587,12 @@ footer span {
     border-color: var(--secondary-text-color);
   }
 
-  .big-button.hover {
+  .dark .big-button.hover {
     border-color: var(--primary-text-color);
+  }
+
+  .light .big-button.hover {
+    border-color: var(--alternative-primary-text-color);
   }
 }
 
@@ -715,7 +723,7 @@ footer span {
 
   .text-box {
     padding: 15px;
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
   .text-box svg {
