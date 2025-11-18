@@ -13,7 +13,7 @@ export const SmallLinkButton = ({ content, url }) => {
         onMouseLeave={() => setHover(false)}
         to={url}
         target="_blank"
-        download={!url.includes('http') ? true : false}
+        download={!url.includes('http') && 'CV_David_Gonzalez.pdf'}
       >
         {content}
       </Link>
