@@ -4,7 +4,7 @@ export const aboutData = [
   {
     label: 'Que estoy buscando',
     content:
-      'Estoy buscando mi primera oportunidad como Desarrollador Front-End Junior. Mi objetivo es iniciar mi carrera en el sector tecnológico, poniendo en práctica mi formación y mi ética de trabajo adquirida en el sector óptico, para crecer profesionalmente. Busco aprender de otros desarrolladores, profundizar en las tecnologías web, entender las metodologias de trabajo profesionales y colaborar en la creación o expansión de proyectos.',
+      'Estoy buscando mi primera oportunidad como Desarrollador Front-End Junior. Mi objetivo es iniciar mi carrera en el sector tecnológico, poniendo en práctica mi formación y mi ética de trabajo adquirida en el sector óptico, para crecer profesionalmente. Busco aprender de otros desarrolladores, profundizar en las tecnologías web, entender las metodologías de trabajo profesionales y colaborar en la creación o expansión de proyectos.',
   },
   {
     label: 'Qué puedo aportar',
@@ -19,7 +19,7 @@ export const aboutData = [
         <br />
         Mi experiencia sanitaria previa me ha dotado de habilidades que puedo aportar a un equipo de trabajo. La
         meticulosidad y atención al detalle me permite traducir diseños a Pixel Perfect con código limpio, estructurado
-        y escalable. La interacción con los usuarios me permite entender cuales son las necesidades de los proyectos
+        y escalable. La interacción con los usuarios me permite entender cuáles son las necesidades de los proyectos
         para crear diseños elegantes, intuitivos y accesibles. La evaluación de síntomas y el diagnóstico para
         prescribir soluciones visuales me ayuda a identificar errores de código y solucionarlos de manera eficiente.
       </>
@@ -31,7 +31,7 @@ export const aboutData = [
       <>
         Después de muchos años en un mundo estático y sin apenas evolución como es la óptica, he decidido dar el paso a
         la que pienso que siempre ha sido mi gran pasión, la informática, y más concretamente la programación, muy
-        dinámica y en evolucíon constante.
+        dinámica y en evolución constante.
         <br />
         <br />
         Desde niño siempre me ha apasionado el mundo de los ordenadores y como de un simple código mostraba resultados
