@@ -146,10 +146,6 @@ h2 {
   object-fit: contain;
 }
 
-.project-image-hover {
-  filter: brightness(33%) blur(4px);
-}
-
 h3 {
   font-size: 26px;
   font-weight: 400;
@@ -234,14 +230,21 @@ button,
 .mail-button svg {
   margin-left: 6px;
   height: 20px;
+  fill: var(--secondary-text-color);
 }
 
 /* Customize contact buttons & big buttons svg color */
 
-.small-button svg g g,
-.big-button svg g g,
-.big-button svg {
+.small-button svg g g {
   fill: var(--secondary-text-color);
+}
+
+.medium-button svg,
+.medium-button svg g g {
+  fill: var(--secondary-text-color);
+}
+.medium-button svg.maintain-color g g {
+  fill: var(--primary-text-color);
 }
 
 .small-button svg path {
@@ -541,7 +544,7 @@ footer span {
   }
 
   .big-button.hover {
-    border-color: var(--dark-primary-text-color);
+    border-color: var(--primary-text-color);
   }
 }
 
@@ -598,7 +601,7 @@ footer span {
   }
 
   .big-button:active {
-    border-color: var(--dark-primary-text-color);
+    border-color: var(--primary-text-color);
   }
 
   p {

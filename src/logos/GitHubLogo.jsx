@@ -1,6 +1,6 @@
 export const GitHubLogo = () => {
   return (
-    <svg version="1.1" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <svg className="maintain-color" version="1.1" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
       <g fill="none" fillRule="evenodd">
         <g transform="translate(-140 -7559)" fill="#f7f7f7">
           <g transform="translate(56 160)">

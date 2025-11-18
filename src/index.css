@@ -1,16 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
-  --dark-background-color: #080808;
-  --dark-secondary-background-color: #1b1b1b;
-  --dark-primary-text-color: #f7f7f7;
-
-  --light-background-color: #f7f7f7;
-  --light-secondary-background-color: #e4e4e4;
-  --light-primary-text-color: #080808;
-
-  --secondary-text-color: #9c9c9c;
-
   --header-height: 70px;
   --header-responsive-height: 60px;
   --footer-height: 70px;
@@ -28,21 +18,66 @@ html {
   scrollbar-gutter: stable both-edges;
 }
 
-/* TODO: temporal forze dark mode before theme changer implementation */
-/* @media (prefers-color-scheme: dark) { */
+.dark {
+  --background-color: #080808;
+  /* --secondary-background-color: #1b1b1b; */
+  --secondary-background-color: #262626;
+  --primary-text-color: #f7f7f7;
+  --secondary-text-color: #9c9c9c;
+}
+
+.light {
+  --background-color: #f7f7f7;
+  /* --secondary-background-color: #e4e4e4; */
+  --secondary-background-color: #d8d8d8;
+  --primary-text-color: #080808;
+  --secondary-text-color: #636363;
+}
+
+.dark nav a:hover,
+.dark footer a:hover {
+  filter: brightness(150%);
+}
+
+.light nav a:hover,
+.light footer a:hover {
+  filter: brightness(50%);
+}
+
+.dark .project-image-hover {
+  filter: brightness(33%) blur(4px);
+}
+
+/* TODO: theme this and borders */
+.light .project-image-hover {
+  filter: brightness(233%) blur(4px);
+}
+
+.dark .big-button svg g g,
+.dark .big-button svg {
+  fill: var(--secondary-text-color);
+}
+
+/* TODO: theme this and borders */
+.light .big-button svg g g,
+.light .big-button svg {
+  fill: var(--secondary-background-color);
+  fill: var(--secondary-text-color);
+}
+
 body,
 .text-box-label {
-  background-color: var(--dark-background-color);
-  color: var(--dark-primary-text-color);
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
 }
 
 header,
 footer {
-  background-color: var(--dark-secondary-background-color);
+  background-color: var(--secondary-background-color);
 }
 
 .project {
-  border: 1px solid var(--dark-secondary-background-color);
+  border: 1px solid var(--secondary-background-color);
 }
 
 .technology-box,
@@ -50,75 +85,22 @@ footer {
 .medium-button,
 .text-box,
 button {
-  border: 1px solid var(--dark-secondary-background-color);
+  border: 1px solid var(--secondary-background-color);
 }
 
 .tech-box {
-  outline: 1px solid var(--dark-secondary-background-color);
-}
-
-nav a:hover,
-footer a:hover {
-  filter: brightness(150%);
+  outline: 1px solid var(--secondary-background-color);
 }
 
 .text-box svg {
-  fill: var(--dark-primary-text-color);
+  fill: var(--primary-text-color);
 }
 
 nav a.active,
 .course {
-  color: var(--dark-primary-text-color);
+  color: var(--primary-text-color);
 }
 
 .medium-button-container .medium-button.selected {
-  border-color: var(--dark-primary-text-color);
+  border-color: var(--primary-text-color);
 }
-/* } */
-
-/* @media (prefers-color-scheme: light) {
-  body,
-  .text-box-label {
-    background-color: var(--light-background-color);
-    color: var(--light-primary-text-color);
-  }
-
-  header,
-  footer {
-    background-color: var(--light-secondary-background-color);
-  }
-
-  .technology-box,
-  .small-button,
-  .medium-button,
-  .text-box,
-  button {
-    border: 1px solid var(--light-secondary-background-color);
-  }
-
-  .tech-box {
-    outline: 1px solid var(--light-secondary-background-color);
-  }
-
-  .project {
-    border: 1px solid var(--light-secondary-background-color);
-  }
-
-  nav a:hover,
-  footer a:hover {
-    filter: brightness(50%);
-  }
-
-  .text-box svg {
-    fill: var(--light-primary-text-color);
-  }
-
-  nav a:active,
-  .course {
-    color: var(--light-primary-text-color);
-  }
-
-  .medium-button-container .medium-button.selected {
-    border-color: var(--light-primary-text-color);
-  }
-} */
