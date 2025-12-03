@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from 'react-router';
+import { Navigate, Route, Routes, useLocation } from 'react-router';
 import './App.css';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
@@ -25,7 +25,7 @@ function App() {
           <Route path="/projects" element={<ProjectsView />} />
           <Route path="/techs" element={<TechsView />} />
           <Route path="/about" element={<AboutView />} />
-          <Route path="*" element={<HomeView />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </AnimatePresence>
       <Footer />
