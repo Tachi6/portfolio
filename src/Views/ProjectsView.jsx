@@ -18,7 +18,7 @@ export const ProjectsView = () => {
     >
       <Projects
         label={<CustomLabel label="Proyectos React" icon={<ReactLogo />} />}
-        projects={[projectsData.portfolio, projectsData.quickTrivia]}
+        projects={[projectsData.planSkiDay, projectsData.portfolio, projectsData.quickTrivia]}
       />
       <Projects label={<CustomLabel label="Proyectos Vue" icon={<VueLogo />} />} projects={[projectsData.dragonBall]} />
       <Projects

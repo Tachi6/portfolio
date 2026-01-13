@@ -34,7 +34,7 @@ export const HomeView = () => {
       </div>
       <Projects
         label={<CustomLabel label="Proyectos destacados" />}
-        projects={[projectsData.cocktails, projectsData.dragonBall]}
+        projects={[projectsData.cocktails, projectsData.planSkiDay]}
       />
     </motion.section>
   );

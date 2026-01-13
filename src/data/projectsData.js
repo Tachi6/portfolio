@@ -2,6 +2,7 @@ import cocktails from '../assets/images/cocktails.png';
 import dragonBall from '../assets/images/dragon-ball.png';
 import quickTrivia from '../assets/images/quick-trivia.png';
 import portfolio from '../assets/images/portfolio.png';
+import skiDayPlan from '../assets/images/ski-day-plan.png';
 import { techsData } from './techsData.jsx';
 
 export const projectsData = {
@@ -36,5 +37,13 @@ export const projectsData = {
     viewUrl: 'https://portfolio-david-gonzalez-de-la-rosa.netlify.app/',
     infoText: 'Mi portfolio con toda mi información realizado con React y Javascript.',
     technologies: [techsData.react, techsData.js],
+  },
+  planSkiDay: {
+    name: 'Ski Day Plan',
+    image: skiDayPlan,
+    codeUrl: 'https://github.com/Tachi6/ski_day_plan',
+    viewUrl: 'https://ski-day-plan.netlify.app/',
+    infoText: 'Planifica tu dia de esqui y obten la duracion estimada de la jornada. ***En desarrollo***',
+    technologies: [techsData.react, techsData.ts],
   },
 };
