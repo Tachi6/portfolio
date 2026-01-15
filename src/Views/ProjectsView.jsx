@@ -7,6 +7,7 @@ import { ReactLogo } from '../logos/ReactLogo';
 import { VueLogo } from '../logos/VueLogo';
 import { JavaScriptLogo } from '../logos/JavaScriptLogo';
 import { CustomLabel } from '../components/CustomLabel.jsx';
+import { FlutterLogo } from '../logos/FlutterLogo.jsx';
 
 export const ProjectsView = () => {
   return (
@@ -20,11 +21,15 @@ export const ProjectsView = () => {
         label={<CustomLabel label="Proyectos React" icon={<ReactLogo />} />}
         projects={[projectsData.planSkiDay, projectsData.portfolio, projectsData.quickTrivia]}
       />
-      <Projects label={<CustomLabel label="Proyectos Vue" icon={<VueLogo />} />} projects={[projectsData.dragonBall]} />
       <Projects
         label={<CustomLabel label="Proyectos Vanilla JS" icon={<JavaScriptLogo />} />}
         projects={[projectsData.cocktails]}
       />
+      <Projects
+        label={<CustomLabel label="Proyectos Flutter" icon={<FlutterLogo />} />}
+        projects={[projectsData.tasteApp, projectsData.pekeFilms]}
+      />
+      <Projects label={<CustomLabel label="Proyectos Vue" icon={<VueLogo />} />} projects={[projectsData.dragonBall]} />
     </motion.section>
   );
 };

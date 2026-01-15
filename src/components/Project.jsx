@@ -19,7 +19,7 @@ export const Project = ({ name, image, codeUrl, viewUrl, infoText, technologies 
         <img src={image} className={`project-image ${hover ? 'project-image-hover' : ''}`} />
         <div className={`project-buttons ${hover ? 'show' : ''}`}>
           <BigLinkButton icon={<GitHubLogo />} text="Code" url={codeUrl} clickAction={clearHover} />
-          <BigLinkButton icon={<LinkIcon />} text="View" url={viewUrl} clickAction={clearHover} />
+          {viewUrl && <BigLinkButton icon={<LinkIcon />} text="View" url={viewUrl} clickAction={clearHover} />}
         </div>
       </div>
       <div className="technologies">

@@ -3,6 +3,8 @@ import dragonBall from '../assets/images/dragon-ball.png';
 import quickTrivia from '../assets/images/quick-trivia.png';
 import portfolio from '../assets/images/portfolio.png';
 import skiDayPlan from '../assets/images/ski-day-plan.png';
+import tasteApp from '../assets/images/taste-app.png';
+import pekeFilms from '../assets/images/peke-films.png';
 import { techsData } from './techsData.jsx';
 
 export const projectsData = {
@@ -43,7 +45,21 @@ export const projectsData = {
     image: skiDayPlan,
     codeUrl: 'https://github.com/Tachi6/ski_day_plan',
     viewUrl: 'https://ski-day-plan.netlify.app/',
-    infoText: 'Planifica tu dia de esqui y obten la duracion estimada de la jornada. ***En desarrollo***',
+    infoText: 'Planifica tu dia de esqui y obten la duracion estimada de la jornada. *En desarrollo*',
     technologies: [techsData.react, techsData.ts],
+  },
+  tasteApp: {
+    name: 'TasteApp',
+    image: tasteApp,
+    codeUrl: 'https://github.com/Tachi6/puntuacion_tacher',
+    infoText: 'Valora y consulta vinos. Organiza catas divertidas con tus amigos. *Test Play Store*',
+    technologies: [techsData.flutter, techsData.dart],
+  },
+  pekeFilms: {
+    name: 'PekeFilms',
+    image: pekeFilms,
+    codeUrl: 'https://github.com/Tachi6/pekefilms',
+    infoText: 'Consulta la cartelera infantil y busca tus películas favoritas. *Test en apk*.',
+    technologies: [techsData.flutter, techsData.dart],
   },
 };
