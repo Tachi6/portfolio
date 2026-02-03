@@ -30,6 +30,10 @@ header {
   z-index: 1;
 }
 
+.home-container {
+  gap: 10px;
+}
+
 .top-content {
   max-width: 90%;
   align-self: center;
@@ -126,7 +130,7 @@ h2 {
 
 .project {
   max-width: 350px;
-  min-height: 290px;
+  /* min-height: 307px; */
   padding: 10px;
   border-radius: 12px;
   display: flex;
@@ -161,7 +165,7 @@ h3 {
 }
 
 .project-text {
-  margin-top: 5px;
+  margin-top: 2.5px;
   color: var(--secondary-text-color);
   text-align: center;
 }
@@ -171,7 +175,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .project-buttons {

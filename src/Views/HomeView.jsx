@@ -12,7 +12,7 @@ import { CustomLabel } from '../components/CustomLabel.jsx';
 export const HomeView = () => {
   return (
     <motion.section
-      className="page-container"
+      className="page-container home-container"
       initial={pageTransitions.initial}
       animate={pageTransitions.animate}
       exit={pageTransitions.exit}
@@ -32,11 +32,6 @@ export const HomeView = () => {
             </strong>, <strong>TypeScript</strong> y <strong>Javascript</strong>, aplico mi rigor analítico y atención
             al detalle para entregar productos de alta calidad técnica.
           </p>
-          {/* <p className="description-text">
-            Creador de diseños elegantes e intuitivos con código limpio y estructurado.
-            <br />
-            Transformo ideas eficientemente en soluciones digitales cuidando los detalles.
-          </p> */}
           <Contact />
         </div>
         <img src={mainPhoto} alt="main-photo" className="main-photo" />
